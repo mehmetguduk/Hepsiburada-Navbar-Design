@@ -44,7 +44,6 @@ header {
             font-weight: 400;
             padding-left: 12px;
             font-size: 1.5rem;
-
             width: 40rem;
             height: 3.2rem;
             border-top-left-radius: 5px;
@@ -359,14 +358,6 @@ section#ad-slider {
                 text-shadow: none;
                 background-color: var(--color-secondary);
             }
-
-            &:focus {
-                outline: var(--border-size) dashed var(--color-primary);
-                outline-offset: calc(var(--border-size) * -3);
-            }
-            &:active {
-                transform: translateY(var(--border-size));
-            }
         }
     }
 
@@ -374,7 +365,7 @@ section#ad-slider {
         position: absolute;
         display: block;
         top: 80px;
-        background-color: lightseagreen;
+        background-color: #F5F5F5;
         height: 400px;
         width: 1000px;
         border-radius: 8px;
