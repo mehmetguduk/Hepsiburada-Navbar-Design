@@ -144,9 +144,5 @@ headerUSERicon.addEventListener("click", function () {
         fadeOut(headerUSERdropdown, 50)
         clicktoggle = 0;
     }
-
 })
 
-headerUSERicon.addEventListener("mouseup", function () {
-    
-})
