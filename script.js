@@ -134,11 +134,19 @@ search.addEventListener("blur", function () {
     searchICON.style.backgroundColor = "#ffffff";
 })
 
-headerUSERicon.addEventListener("mousedown", function () {
-    fadeIn(headerUSERdropdown, 50)
+let clicktoggle = 0;
+headerUSERicon.addEventListener("click", function () {
+    if (clicktoggle === 0) { 
+        fadeIn(headerUSERdropdown, 50) 
+        clicktoggle = 1;
+    }
+    else if (clicktoggle === 1){
+        fadeOut(headerUSERdropdown, 50)
+        clicktoggle = 0;
+    }
 
 })
 
 headerUSERicon.addEventListener("mouseup", function () {
-    fadeOut(headerUSERdropdown, 50)
+    
 })
