@@ -173,7 +173,6 @@ header {
 
                         border-bottom-left-radius: 7px;
                         border-bottom-right-radius: 7px;
-                        border: #ff6000 solid 1px;
 
                         .header-user-dropdown-item {
                             cursor: pointer;
@@ -317,23 +316,56 @@ section#ad-slider {
     align-items: center;
 
     .slider-button-container {
+        --border-size: 0.125rem;
+        --duration: 250ms;
+        --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+        --color-primary: white;
+        --color-secondary: #646464;
+        --color-tertiary: dodgerblue;
+        --space: 1rem;
+        display: flex;
+        width: 100%;
         position: absolute;
         top: 40px;
+        padding: 0 500px;
+
+        &:hover button:focus:not(:hover) {
+            flex-grow: 1;
+            color: var(--color-secondary);
+            background-color: var(--color-primary);
+            outline-color: var(--color-tertiary);
+        }
 
         .slider-button {
-            margin: 0 3px;
-            padding: 10px;
-            border: none;
-            color: #646464;
-            background-color: #f5f5f5;
-            transition: 0.2s;
+            flex-grow: 1;
             cursor: pointer;
-            border-radius: 2px;
+            position: relative;
+            padding: calc(var(--space) / 1.125) var(--space) var(--space);
+            border: var(--border-size) solid #646464;
+            color: var(--color-secondary);
+            background-color: var(--color-primary);
+            font-size: 1.5rem;
+            transition: flex-grow var(--duration) var(--ease);
+            
+            & + button {
+                border-left: var(--border-size) solid #646464;
+                margin-left: calc(var(--border-size) * -1);
+            }
+            &:hover,
+            &:focus {
+                flex-grow: 2;
+                color: white;
+                outline: none;
+                text-shadow: none;
+                background-color: var(--color-secondary);
+            }
 
-            &:hover {
-                color: #ffffff;
-                background-color: #ff6000;
-                border-radius: 0px;
+            &:focus {
+                outline: var(--border-size) dashed var(--color-primary);
+                outline-offset: calc(var(--border-size) * -3);
+            }
+            &:active {
+                transform: translateY(var(--border-size));
             }
         }
     }
@@ -342,7 +374,7 @@ section#ad-slider {
         position: absolute;
         display: block;
         top: 80px;
-        background-color: lightseagreen ;
+        background-color: lightseagreen;
         height: 400px;
         width: 1000px;
         border-radius: 8px;
@@ -351,7 +383,7 @@ section#ad-slider {
     .slider-mini-icons-container {
         position: absolute;
         bottom: 10px;
-    
+
         .left-arrow,
         .right-arrow {
             margin: 0 3px;
