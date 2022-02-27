@@ -21,6 +21,11 @@ div.nav-list-container {
                 div.nav-item-dropdown {
                     display: block;
                 }
+
+                h3.nav-item-header {
+                    background-color: var(--orange1);
+                    color: var(--white1);
+                }
             }
 
             h3.nav-item-header {
@@ -33,10 +38,6 @@ div.nav-list-container {
                 padding: 0 15px;
                 cursor: pointer;
 
-                &:hover {
-                    background-color: var(--orange1);
-                    color: var(--white1);
-                }
             }
 
             div.nav-item-dropdown {
