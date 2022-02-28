@@ -13,7 +13,8 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="navbar.css">
-    <script src="https://kit.fontawesome.com/845e11152e.js"></script>
+    <link rel="stylesheet" href="controlpanel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
     <title>Hepsiburada</title>
 </head>
 
@@ -24,9 +25,9 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
             <h1 class="hepsiburada" id="hepsiburada-1">hepsi</h1>
             <h1 class="hepsiburada" id="hepsiburada-2">burada</h1>
             <input class="search-input" type="text" placeholder="Ürün, kategori veya marka ara" autocomplete="off">
-            <i class="search-icon fas fa-search"></i>
+            <i class="search-icon fa fa-search" aria-hidden="true"></i>
             <h1 class="hepsiburada" id="hepsiburada-3">burada</h1>
-            <i class="location-icon fas fa-map-marker-alt"></i>
+            <i class="location-icon fa fa-map-marker" aria-hidden="true"></i>
             <div class="location-container">
                 <span class="location-header">Konum</span>
                 <span class="location-city">Ankara</span>
@@ -35,11 +36,11 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
         <div class="header-right-menu">
             <div class="basket">
                 <a class="basket-total" href="">1250,20 TL</a>
-                <i class="basket-icon fas fa-shopping-basket"></i>
+                <i class="basket-icon fa fa-shopping-cart" aria-hidden="true"></i>
             </div>
             <div class="user" is_active="false" onmouseleave="FOCUS_OUT()">
                 <a class="user-name" href="">Mehmet</a>
-                <i class="user-icon fas fa-user-circle"></i>
+                <i class="user-icon fa fa-user-circle" aria-hidden="true"></i>
                 <div class="hidden-5px"></div>
                 <div class="user-dropdown">
                     <div class="dropdown-container">
@@ -62,719 +63,736 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
     </header>
 
     <nav>
-       <div class="nav-list-container">
-        <div class="nav-list">
-            <div class="nav-item">
-                <h3 class="nav-item-header">Kadın</h3>
-                <div class="nav-item-dropdown">
-                    <div class="dropdown-container">
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Giyim</a>
-                            <a class="group-item" href="">Elbise</a>
-                            <a class="group-item" href="">Tişört</a>
-                            <a class="group-item" href="">Gömlek</a>
-                            <a class="group-item" href="">Kot Pantolon</a>
-                            <a class="group-item" href="">Kot Ceket</a>
-                            <a class="group-item" href="">Pantolon</a>
-                            <a class="group-item" href="">Mont</a>
-                            <a class="group-item" href="">Bluz</a>
-                            <a class="group-item" href="">Ceket</a>
-                            <a class="group-item" href="">Etek</a>
-                            <a class="group-item" href="">Kazak</a>
-                            <a class="group-item" href="">Tesettür</a>
-                            <a class="group-item" href="">Büyük Beden</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Ayakkabı</a>
-                            <a class="group-item" href="">Topuklu Ayakkabı</a>
-                            <a class="group-item" href="">Sneaker</a>
-                            <a class="group-item" href="">Günlük Ayakkabı</a>
-                            <a class="group-item" href="">Babet</a>
-                            <a class="group-item" href="">Sandalet</a>
-                            <a class="group-item" href="">Terlik</a>
-                            <a class="group-header" href="">Aksesuar & Çanta</a>
-                            <a class="group-item" href="">Çanta</a>
-                            <a class="group-item" href="">Saat</a>
-                            <a class="group-item" href="">Takı</a>
-                            <a class="group-item" href="">Şapka</a>
-                            <a class="group-item" href="">Cüzdan</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">İç Giyim</a>
-                            <a class="group-item" href="">Pijama Takımı</a>
-                            <a class="group-item" href="">Gecelik</a>
-                            <a class="group-item" href="">Sütyen</a>
-                            <a class="group-item" href="">İç Çamaşırı Takımları</a>
-                            <a class="group-item" href="">Fantezi Giyim</a>
-                            <a class="group-item" href="">Çorap</a>
-                            <a class="group-header" href="">Lüks & Designer</a>
-                            <a class="group-item" href="">Lüks Çanta</a>
-                            <a class="group-item" href="">Lüks Giyim</a>
-                            <a class="group-item" href="">Lüks Ayakkabı</a>
-                            <a class="group-item" href="">Tasarım Giyim</a>
-                            <a class="group-item" href="">Tasarım Ayakkabı</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Kozmetik</a>
-                            <a class="group-item" href="">Parfüm</a>
-                            <a class="group-item" href="">Göz Makyajı</a>
-                            <a class="group-item" href="">Cilt Bakım</a>
-                            <a class="group-item" href="">Saç Bakımı</a>
-                            <a class="group-item" href="">Makyaj</a>
-                            <a class="group-item" href="">Ağız Bakım</a>
-                            <a class="group-item" href="">Cinsel Sağlık</a>
-                            <a class="group-item" href="">Vücut Bakım</a>
-                            <a class="group-item" href="">Hijyenik Ped</a>
-                            <a class="group-item" href="">Duş Jeli & Kremleri</a>
-                            <a class="group-item" href="">Epilasyon Ürünleri</a>
-                            <a class="group-item" href="">Ruj</a>
-                            <a class="group-item" href="">Güneş Kremi</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Spor & Outdoor</a>
-                            <a class="group-item" href="">Sweatshirt</a>
-                            <a class="group-item" href="">Tişört</a>
-                            <a class="group-item" href="">Spor Sütyeni</a>
-                            <a class="group-item" href="">Eşofman</a>
-                            <a class="group-item" href="">Koşu Ayakkabısı</a>
-                            <a class="group-item" href="">Spor Çantası</a>
-                            <a class="group-item" href="">Spor Ekipmanları</a>
-                            <a class="group-item" href="">Outdoor Ayakkabı</a>
-                            <a class="group-item" href="">Kar Botu</a>
-                            <a class="group-item" href="">Outdoor Ekipmanları</a>
-                            <a class="group-item" href="">Sporcu Besinleri</a>
-                            <a class="group-item" href="">Sporcu Aksesuarları</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-item">
-                <h3 class="nav-item-header">Erkek</h3>
-                <div class="nav-item-dropdown">
-                    <div class="dropdown-container">
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Giyim</a>
-                            <a class="group-item" href="">Tişört</a>
-                            <a class="group-item" href="">Şort</a>
-                            <a class="group-item" href="">Gömlek</a>
-                            <a class="group-item" href="">Eşofman</a>
-                            <a class="group-item" href="">Pantolon</a>
-                            <a class="group-item" href="">Ceket</a>
-                            <a class="group-item" href="">Kot Pantolon</a>
-                            <a class="group-item" href="">Yelek</a>
-                            <a class="group-item" href="">Kazak</a>
-                            <a class="group-item" href="">Mont</a>
-                            <a class="group-item" href="">Takım Elbise</a>
-                            <a class="group-item" href="">Sweatshirt</a>
-                            <a class="group-item" href="">Forma</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Ayakkabı</a>
-                            <a class="group-item" href="">Spor Ayakkabı</a>
-                            <a class="group-item" href="">Günlük Ayakkabı</a>
-                            <a class="group-item" href="">Yürüyüş Ayakkabısı</a>
-                            <a class="group-item" href="">Krampon</a>
-                            <a class="group-item" href="">Sneaker</a>
-                            <a class="group-item" href="">Klasik</a>
-                            <a class="group-item" href="">Koşu & Antrenman</a>
-                            <a class="group-header" href="">Kişisel Bakım</a>
-                            <a class="group-item" href="">Parfüm</a>
-                            <a class="group-item" href="">Cinsel Sağlık</a>
-                            <a class="group-item" href="">Tıraş Sonrası Ürünler</a>
-                            <a class="group-item" href="">Tıraş Bıçağı</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Saat & Aksesuar</a>
-                            <a class="group-item" href="">Saat</a>
-                            <a class="group-item" href="">Güneş Gözlüğü</a>
-                            <a class="group-item" href="">Cüzdan</a>
-                            <a class="group-item" href="">Kemer</a>
-                            <a class="group-item" href="">Çanta</a>
-                            <a class="group-item" href="">Şapka</a>
-                            <a class="group-item" href="">Bileklik</a>
-                            <a class="group-header" href="">İç Giyim</a>
-                            <a class="group-item" href="">Boxer</a>
-                            <a class="group-item" href="">Çorap</a>
-                            <a class="group-item" href="">Pijama</a>
-                            <a class="group-item" href="">Atlet</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Spor & Outdoor</a>
-                            <a class="group-item" href="">Eşofman</a>
-                            <a class="group-item" href="">Spor Ayakkabı</a>
-                            <a class="group-item" href="">T-shirt</a>
-                            <a class="group-item" href="">Sweatshirt</a>
-                            <a class="group-item" href="">Forma</a>
-                            <a class="group-item" href="">Spor Çorap</a>
-                            <a class="group-item" href="">Spor Giyim</a>
-                            <a class="group-item" href="">Outdoor Ayakkabı</a>
-                            <a class="group-item" href="">Outdoor Bot</a>
-                            <a class="group-item" href="">Spor Ekipmanları</a>
-                            <a class="group-item" href="">Outdoor Ekipmanları</a>
-                            <a class="group-item" href="">Sporcu Besinleri</a>
-                            <a class="group-item" href="">Sporcu Aksesuarları</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Elektronik</a>
-                            <a class="group-item" href="">Tıraş Makinesi</a>
-                            <a class="group-item" href="">Cep Telefonu</a>
-                            <a class="group-item" href="">Akıllı Saat</a>
-                            <a class="group-item" href="">Akıllı Bileklik</a>
-                            <a class="group-item" href="">Laptop</a>
-                            <a class="group-item" href="">Oyun & Konsollar</a>
-                            <a class="group-item" href="">Elektrikli Bisiklet</a>
-                            <a class="group-item" href="">E-pin ve Cüzdan Kodu</a>
-                            <a class="group-header" href="">Lüks & Designer</a>
-                            <a class="group-item" href="">Lüks Giyim</a>
-                            <a class="group-item" href="">Lüks Ayakkabı</a>
-                            <a class="group-item" href="">Lüks Çanta</a>
+        <div class="nav-list-container">
+            <div class="nav-list">
+                <div class="nav-item">
+                    <h3 class="nav-item-header">Kadın</h3>
+                    <div class="nav-item-dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Giyim</a>
+                                <a class="group-item" href="">Elbise</a>
+                                <a class="group-item" href="">Tişört</a>
+                                <a class="group-item" href="">Gömlek</a>
+                                <a class="group-item" href="">Kot Pantolon</a>
+                                <a class="group-item" href="">Kot Ceket</a>
+                                <a class="group-item" href="">Pantolon</a>
+                                <a class="group-item" href="">Mont</a>
+                                <a class="group-item" href="">Bluz</a>
+                                <a class="group-item" href="">Ceket</a>
+                                <a class="group-item" href="">Etek</a>
+                                <a class="group-item" href="">Kazak</a>
+                                <a class="group-item" href="">Tesettür</a>
+                                <a class="group-item" href="">Büyük Beden</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Ayakkabı</a>
+                                <a class="group-item" href="">Topuklu Ayakkabı</a>
+                                <a class="group-item" href="">Sneaker</a>
+                                <a class="group-item" href="">Günlük Ayakkabı</a>
+                                <a class="group-item" href="">Babet</a>
+                                <a class="group-item" href="">Sandalet</a>
+                                <a class="group-item" href="">Terlik</a>
+                                <a class="group-header" href="">Aksesuar & Çanta</a>
+                                <a class="group-item" href="">Çanta</a>
+                                <a class="group-item" href="">Saat</a>
+                                <a class="group-item" href="">Takı</a>
+                                <a class="group-item" href="">Şapka</a>
+                                <a class="group-item" href="">Cüzdan</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">İç Giyim</a>
+                                <a class="group-item" href="">Pijama Takımı</a>
+                                <a class="group-item" href="">Gecelik</a>
+                                <a class="group-item" href="">Sütyen</a>
+                                <a class="group-item" href="">İç Çamaşırı Takımları</a>
+                                <a class="group-item" href="">Fantezi Giyim</a>
+                                <a class="group-item" href="">Çorap</a>
+                                <a class="group-header" href="">Lüks & Designer</a>
+                                <a class="group-item" href="">Lüks Çanta</a>
+                                <a class="group-item" href="">Lüks Giyim</a>
+                                <a class="group-item" href="">Lüks Ayakkabı</a>
+                                <a class="group-item" href="">Tasarım Giyim</a>
+                                <a class="group-item" href="">Tasarım Ayakkabı</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Kozmetik</a>
+                                <a class="group-item" href="">Parfüm</a>
+                                <a class="group-item" href="">Göz Makyajı</a>
+                                <a class="group-item" href="">Cilt Bakım</a>
+                                <a class="group-item" href="">Saç Bakımı</a>
+                                <a class="group-item" href="">Makyaj</a>
+                                <a class="group-item" href="">Ağız Bakım</a>
+                                <a class="group-item" href="">Cinsel Sağlık</a>
+                                <a class="group-item" href="">Vücut Bakım</a>
+                                <a class="group-item" href="">Hijyenik Ped</a>
+                                <a class="group-item" href="">Duş Jeli & Kremleri</a>
+                                <a class="group-item" href="">Epilasyon Ürünleri</a>
+                                <a class="group-item" href="">Ruj</a>
+                                <a class="group-item" href="">Güneş Kremi</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Spor & Outdoor</a>
+                                <a class="group-item" href="">Sweatshirt</a>
+                                <a class="group-item" href="">Tişört</a>
+                                <a class="group-item" href="">Spor Sütyeni</a>
+                                <a class="group-item" href="">Eşofman</a>
+                                <a class="group-item" href="">Koşu Ayakkabısı</a>
+                                <a class="group-item" href="">Spor Çantası</a>
+                                <a class="group-item" href="">Spor Ekipmanları</a>
+                                <a class="group-item" href="">Outdoor Ayakkabı</a>
+                                <a class="group-item" href="">Kar Botu</a>
+                                <a class="group-item" href="">Outdoor Ekipmanları</a>
+                                <a class="group-item" href="">Sporcu Besinleri</a>
+                                <a class="group-item" href="">Sporcu Aksesuarları</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="nav-item">
-                <h3 class="nav-item-header">Çocuk</h3>
-                <div class="nav-item-dropdown">
-                    <div class="dropdown-container">
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Bebek</a>
-                            <a class="group-item" href="">Bebek Takımları</a>
-                            <a class="group-item" href="">Ayakkabı</a>
-                            <a class="group-item" href="">Hastane Çıkışı</a>
-                            <a class="group-item" href="">Yenidoğan Kıyafetleri</a>
-                            <a class="group-item" href="">Tulum & Salopet</a>
-                            <a class="group-item" href="">Body & Zıbın</a>
-                            <a class="group-item" href="">Tişört & Atlet</a>
-                            <a class="group-item" href="">Elbise</a>
-                            <a class="group-item" href="">Şort</a>
-                            <a class="group-item" href="">Bebek Patiği</a>
-                            <a class="group-item" href="">Bebek Bezi</a>
-                            <a class="group-item" href="">Bebek Maması</a>
-                            <a class="group-item" href="">Islak Mendil</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Kız Çocuk</a>
-                            <a class="group-item" href="">Elbise</a>
-                            <a class="group-item" href="">Sweatshirt</a>
-                            <a class="group-item" href="">Spor Ayakkabı</a>
-                            <a class="group-item" href="">Eşofman</a>
-                            <a class="group-item" href="">İç Giyim & Pijama</a>
-                            <a class="group-item" href="">Tişört & Atlet</a>
-                            <a class="group-item" href="">Tayt</a>
-                            <a class="group-item" href="">Günlük Ayakkabı</a>
-                            <a class="group-item" href="">Şort</a>
-                            <a class="group-item" href="">Mont</a>
-                            <a class="group-item" href="">Çocuk Oyun Evi</a>
-                            <a class="group-item" href="">Oyuncak Bebek</a>
-                            <a class="group-item" href="">Oyuncak Mutfak</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Erkek Çocuk</a>
-                            <a class="group-item" href="">Sweatshirt</a>
-                            <a class="group-item" href="">Spor Ayakkabı</a>
-                            <a class="group-item" href="">Eşofman</a>
-                            <a class="group-item" href="">İç Giyim & Pijama</a>
-                            <a class="group-item" href="">Tişört & Atlet</a>
-                            <a class="group-item" href="">Günlük Ayakkabı</a>
-                            <a class="group-item" href="">Okul Çantası</a>
-                            <a class="group-item" href="">Şort</a>
-                            <a class="group-item" href="">Gömlek</a>
-                            <a class="group-item" href="">Mont</a>
-                            <a class="group-item" href="">Oyuncak Traktör</a>
-                            <a class="group-item" href="">Akülü Araba</a>
-                            <a class="group-item" href="">Kumandalı Araba</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Bebek Bakım</a>
-                            <a class="group-item" href="">Banyo & Tuvalet</a>
-                            <a class="group-item" href="">Bebek Şampuanı</a>
-                            <a class="group-item" href="">Krem & Yağlar</a>
-                            <a class="group-item" href="">Bebek Çantası</a>
-                            <a class="group-header" href="">Oyuncak</a>
-                            <a class="group-item" href="">Eğitici Oyuncaklar</a>
-                            <a class="group-item" href="">Oyuncak Araba</a>
-                            <a class="group-item" href="">Oyuncak Bebek</a>
-                            <a class="group-item" href="">Bebek & Okul Öncesi</a>
-                            <a class="group-item" href="">Kumandalı Oyuncak</a>
-                            <a class="group-item" href="">Robot Oyuncak</a>
-                            <a class="group-item" href="">Oyun Hamuru</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Taşıma & Güvenlik</a>
-                            <a class="group-item" href="">Bebek Arabası & Puset</a>
-                            <a class="group-item" href="">Park Yatak</a>
-                            <a class="group-item" href="">Ana Kucağı</a>
-                            <a class="group-item" href="">Portbebe & Kanguru</a>
-                            <a class="group-item" href="">Yürüteç</a>
-                            <a class="group-item" href="">Oto Koltuğu</a>
-                            <a class="group-header" href="">Bebek Emzirme</a>
-                            <a class="group-item" href="">Biberon & Emzik</a>
-                            <a class="group-item" href="">Göğüs Pompası</a>
-                            <a class="group-item" href="">Mama Sandalyesi</a>
-                            <a class="group-item" href="">Mama Önlüğü</a>
-                            <a class="group-item" href="">Alıştırma Bardağı</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-item">
-                <h3 class="nav-item-header">Ev & Yaşam</h3>
-                <div class="nav-item-dropdown">
-                    <div class="dropdown-container">
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Sofra & Mutfak</a>
-                            <a class="group-item" href="">Yemek Takımı</a>
-                            <a class="group-item" href="">Çatal Kaşık Bıçak Seti</a>
-                            <a class="group-item" href="">Baharat Takımı</a>
-                            <a class="group-item" href="">Bardak</a>
-                            <a class="group-item" href="">Fırın & Kek Kalıbı</a>
-                            <a class="group-item" href="">Çaydanlık</a>
-                            <a class="group-item" href="">Tencere Seti</a>
-                            <a class="group-header" href="">Banyo</a>
-                            <a class="group-item" href="">Havlu & Havlu Seti</a>
-                            <a class="group-item" href="">Bornoz</a>
-                            <a class="group-item" href="">Banyo Seti</a>
-                            <a class="group-item" href="">Banyo Paspası</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Ev Tekstili</a>
-                            <a class="group-item" href="">Yatak Odası</a>
-                            <a class="group-item" href="">Halı & Kilim & Paspas</a>
-                            <a class="group-item" href="">Perde</a>
-                            <a class="group-item" href="">Nevresim Takımı</a>
-                            <a class="group-item" href="">Yastık</a>
-                            <a class="group-item" href="">Kırlent ve Kılıfı</a>
-                            <a class="group-header" href="">Ev Dekorasyon</a>
-                            <a class="group-item" href="">Dekoratif Aksesuar</a>
-                            <a class="group-item" href="">Tablo</a>
-                            <a class="group-item" href="">Duvar Saati</a>
-                            <a class="group-item" href="">Ayna</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Aydınlatma</a>
-                            <a class="group-item" href="">Avize</a>
-                            <a class="group-item" href="">Lambader</a>
-                            <a class="group-item" href="">Abajur</a>
-                            <a class="group-header" href="">Mobilya</a>
-                            <a class="group-item" href="">Salon & Oturma Odası</a>
-                            <a class="group-item" href="">Yatak Odası</a>
-                            <a class="group-item" href="">Bahçe Mobilyası</a>
-                            <a class="group-item" href="">Çalışma Odası</a>
-                            <a class="group-header" href="">Ev Gereçleri</a>
-                            <a class="group-item" href="">Düzenleyici</a>
-                            <a class="group-item" href="">Çamaşırlık</a>
-                            <a class="group-item" href="">Sepet & Saklama Kutusu</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Hobi</a>
-                            <a class="group-item" href="">Kitap</a>
-                            <a class="group-item" href="">Puzzle</a>
-                            <a class="group-item" href="">Boya & Resim</a>
-                            <a class="group-item" href="">Kutu Oyunları</a>
-                            <a class="group-header" href="">Kırtasiye & Ofis</a>
-                            <a class="group-item" href="">Defter</a>
-                            <a class="group-item" href="">Kalem</a>
-                            <a class="group-header" href="">Spor & Outdoor</a>
-                            <a class="group-item" href="">Koşu Bandı</a>
-                            <a class="group-item" href="">Dumbell & Ağırlık</a>
-                            <a class="group-item" href="">Pilates & Yoga</a>
-                            <a class="group-item" href="">Eliptik Bisiklet</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Otomobil & Motosiklet</a>
-                            <a class="group-item" href="">Oto Aksesuar</a>
-                            <a class="group-item" href="">Oto Paspası</a>
-                            <a class="group-item" href="">Oto Lastik</a>
-                            <a class="group-item" href="">Kask</a>
-                            <a class="group-header" href="">Yapı Market</a>
-                            <a class="group-item" href="">Banyo Yapı Malzemeleri</a>
-                            <a class="group-item" href="">Elektrikli El Aleti</a>
-                            <a class="group-item" href="">Hırdavat Ürünleri</a>
-                            <a class="group-item" href="">Boya</a>
-                            <a class="group-item" href="">Matkap</a>
-                            <a class="group-item" href="">Ampul</a>
+                <div class="nav-item">
+                    <h3 class="nav-item-header">Erkek</h3>
+                    <div class="nav-item-dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Giyim</a>
+                                <a class="group-item" href="">Tişört</a>
+                                <a class="group-item" href="">Şort</a>
+                                <a class="group-item" href="">Gömlek</a>
+                                <a class="group-item" href="">Eşofman</a>
+                                <a class="group-item" href="">Pantolon</a>
+                                <a class="group-item" href="">Ceket</a>
+                                <a class="group-item" href="">Kot Pantolon</a>
+                                <a class="group-item" href="">Yelek</a>
+                                <a class="group-item" href="">Kazak</a>
+                                <a class="group-item" href="">Mont</a>
+                                <a class="group-item" href="">Takım Elbise</a>
+                                <a class="group-item" href="">Sweatshirt</a>
+                                <a class="group-item" href="">Forma</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Ayakkabı</a>
+                                <a class="group-item" href="">Spor Ayakkabı</a>
+                                <a class="group-item" href="">Günlük Ayakkabı</a>
+                                <a class="group-item" href="">Yürüyüş Ayakkabısı</a>
+                                <a class="group-item" href="">Krampon</a>
+                                <a class="group-item" href="">Sneaker</a>
+                                <a class="group-item" href="">Klasik</a>
+                                <a class="group-item" href="">Koşu & Antrenman</a>
+                                <a class="group-header" href="">Kişisel Bakım</a>
+                                <a class="group-item" href="">Parfüm</a>
+                                <a class="group-item" href="">Cinsel Sağlık</a>
+                                <a class="group-item" href="">Tıraş Sonrası Ürünler</a>
+                                <a class="group-item" href="">Tıraş Bıçağı</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Saat & Aksesuar</a>
+                                <a class="group-item" href="">Saat</a>
+                                <a class="group-item" href="">Güneş Gözlüğü</a>
+                                <a class="group-item" href="">Cüzdan</a>
+                                <a class="group-item" href="">Kemer</a>
+                                <a class="group-item" href="">Çanta</a>
+                                <a class="group-item" href="">Şapka</a>
+                                <a class="group-item" href="">Bileklik</a>
+                                <a class="group-header" href="">İç Giyim</a>
+                                <a class="group-item" href="">Boxer</a>
+                                <a class="group-item" href="">Çorap</a>
+                                <a class="group-item" href="">Pijama</a>
+                                <a class="group-item" href="">Atlet</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Spor & Outdoor</a>
+                                <a class="group-item" href="">Eşofman</a>
+                                <a class="group-item" href="">Spor Ayakkabı</a>
+                                <a class="group-item" href="">T-shirt</a>
+                                <a class="group-item" href="">Sweatshirt</a>
+                                <a class="group-item" href="">Forma</a>
+                                <a class="group-item" href="">Spor Çorap</a>
+                                <a class="group-item" href="">Spor Giyim</a>
+                                <a class="group-item" href="">Outdoor Ayakkabı</a>
+                                <a class="group-item" href="">Outdoor Bot</a>
+                                <a class="group-item" href="">Spor Ekipmanları</a>
+                                <a class="group-item" href="">Outdoor Ekipmanları</a>
+                                <a class="group-item" href="">Sporcu Besinleri</a>
+                                <a class="group-item" href="">Sporcu Aksesuarları</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Elektronik</a>
+                                <a class="group-item" href="">Tıraş Makinesi</a>
+                                <a class="group-item" href="">Cep Telefonu</a>
+                                <a class="group-item" href="">Akıllı Saat</a>
+                                <a class="group-item" href="">Akıllı Bileklik</a>
+                                <a class="group-item" href="">Laptop</a>
+                                <a class="group-item" href="">Oyun & Konsollar</a>
+                                <a class="group-item" href="">Elektrikli Bisiklet</a>
+                                <a class="group-item" href="">E-pin ve Cüzdan Kodu</a>
+                                <a class="group-header" href="">Lüks & Designer</a>
+                                <a class="group-item" href="">Lüks Giyim</a>
+                                <a class="group-item" href="">Lüks Ayakkabı</a>
+                                <a class="group-item" href="">Lüks Çanta</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="nav-item">
-                <h3 class="nav-item-header">Süpermarket</h3>
-                <div class="nav-item-dropdown">
-                    <div class="dropdown-container">
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Ev & Temizlik</a>
-                            <a class="group-item" href="">Çamaşır Yıkama</a>
-                            <a class="group-item" href="">Bulaşık Yıkama</a>
-                            <a class="group-item" href="">Ev Temizlik</a>
-                            <a class="group-item" href="">Paspas & Mop</a>
-                            <a class="group-item" href="">Kağıt Ürünleri</a>
-                            <a class="group-header" href="">Gıda</a>
-                            <a class="group-item" href="">Çay</a>
-                            <a class="group-item" href="">Kahve</a>
-                            <a class="group-item" href="">Kuruyemiş</a>
-                            <a class="group-item" href="">Kahvaltılık</a>
-                            <a class="group-item" href="">Organik Ürünler</a>
-                            <a class="group-item" href="">Diyabetik Ürünler</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Kişisel Bakım</a>
-                            <a class="group-item" href="">Saç Bakımı</a>
-                            <a class="group-item" href="">Ağda & Epilasyon</a>
-                            <a class="group-item" href="">Banyo & Duş</a>
-                            <a class="group-item" href="">Ağız Bakım</a>
-                            <a class="group-item" href="">Cilt Bakımı</a>
-                            <a class="group-item" href="">Vücut Bakımı</a>
-                            <a class="group-header" href="">Sağlık & Spor</a>
-                            <a class="group-item" href="">Cinsel Sağlık</a>
-                            <a class="group-item" href="">Hijyenik Ped</a>
-                            <a class="group-item" href="">Sporcu Besinleri</a>
-                            <a class="group-item" href="">Vitamin & Ek Gıda</a>
-                            <a class="group-item" href="">Hasta Bezi & Temizlik</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Petshop</a>
-                            <a class="group-item" href="">Kedi Maması</a>
-                            <a class="group-item" href="">Kedi Kumu</a>
-                            <a class="group-item" href="">Köpek Maması</a>
-                            <a class="group-item" href="">Köpek Tasması</a>
-                            <a class="group-item" href="">Kuş Ürünleri</a>
-                            <a class="group-item" href="">Akvaryum Ürünleri</a>
-                            <a class="group-header" href="">Bebek Bakım</a>
-                            <a class="group-item" href="">Süt Arttırıcı İçecekler</a>
-                            <a class="group-item" href="">Bebek Ek Besin</a>
-                            <a class="group-item" href="">Bebek Bezi</a>
-                            <a class="group-item" href="">Islak Mendil & Havlu</a>
-                            <a class="group-item" href="">Bebek Kozmetik</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-item">
-                <h3 class="nav-item-header">Kozmetik</h3>
-                <div class="nav-item-dropdown">
-                    <div class="dropdown-container">
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Makyaj</a>
-                            <a class="group-item" href="">Göz Makyajı</a>
-                            <a class="group-item" href="">Ten Makyajı</a>
-                            <a class="group-item" href="">Dudak Makyajı</a>
-                            <a class="group-item" href="">Makyaj Seti</a>
-                            <a class="group-item" href="">Oje & Aseton</a>
-                            <a class="group-item" href="">Fondöten</a>
-                            <a class="group-header" href="">Parfüm & Deodorant</a>
-                            <a class="group-item" href="">Parfüm</a>
-                            <a class="group-item" href="">Parfüm Setleri</a>
-                            <a class="group-item" href="">Deodorant & Roll-on</a>
-                            <a class="group-item" href="">Vücut Spreyi</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Cilt Bakımı</a>
-                            <a class="group-item" href="">Yüz Kremi</a>
-                            <a class="group-item" href="">Yüz Temizleme</a>
-                            <a class="group-item" href="">Yüz Maskesi</a>
-                            <a class="group-item" href="">Göz Bakımı</a>
-                            <a class="group-item" href="">Güneş Koruyucu</a>
-                            <a class="group-item" href="">Cilt Serumu</a>
-                            <a class="group-item" href="">El & Ayak Bakımı</a>
-                            <a class="group-header" href="">Saç Bakımı</a>
-                            <a class="group-item" href="">Şampuan</a>
-                            <a class="group-item" href="">Saç Şekillendirici</a>
-                            <a class="group-item" href="">Saç Serumu & Maskesi</a>
-                            <a class="group-item" href="">Saç Boyası</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Epilasyon & Tıraş</a>
-                            <a class="group-item" href="">Tüy Dökücü</a>
-                            <a class="group-item" href="">Ağda</a>
-                            <a class="group-item" href="">Tıraş Bıçağı</a>
-                            <a class="group-item" href="">Epilatör</a>
-                            <a class="group-item" href="">Tıraş Köpüğü</a>
-                            <a class="group-header" href="">Genel Bakım</a>
-                            <a class="group-item" href="">Cinsel Sağlık</a>
-                            <a class="group-item" href="">Hijyenik Ped</a>
-                            <a class="group-item" href="">Vücut Bakımı</a>
-                            <a class="group-item" href="">El ve Ayak Bakımı</a>
-                            <a class="group-item" href="">Duş Jeli ve Kremi</a>
-                            <a class="group-item" href="">Bakım Yağları</a>
+                <div class="nav-item">
+                    <h3 class="nav-item-header">Çocuk</h3>
+                    <div class="nav-item-dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Bebek</a>
+                                <a class="group-item" href="">Bebek Takımları</a>
+                                <a class="group-item" href="">Ayakkabı</a>
+                                <a class="group-item" href="">Hastane Çıkışı</a>
+                                <a class="group-item" href="">Yenidoğan Kıyafetleri</a>
+                                <a class="group-item" href="">Tulum & Salopet</a>
+                                <a class="group-item" href="">Body & Zıbın</a>
+                                <a class="group-item" href="">Tişört & Atlet</a>
+                                <a class="group-item" href="">Elbise</a>
+                                <a class="group-item" href="">Şort</a>
+                                <a class="group-item" href="">Bebek Patiği</a>
+                                <a class="group-item" href="">Bebek Bezi</a>
+                                <a class="group-item" href="">Bebek Maması</a>
+                                <a class="group-item" href="">Islak Mendil</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Kız Çocuk</a>
+                                <a class="group-item" href="">Elbise</a>
+                                <a class="group-item" href="">Sweatshirt</a>
+                                <a class="group-item" href="">Spor Ayakkabı</a>
+                                <a class="group-item" href="">Eşofman</a>
+                                <a class="group-item" href="">İç Giyim & Pijama</a>
+                                <a class="group-item" href="">Tişört & Atlet</a>
+                                <a class="group-item" href="">Tayt</a>
+                                <a class="group-item" href="">Günlük Ayakkabı</a>
+                                <a class="group-item" href="">Şort</a>
+                                <a class="group-item" href="">Mont</a>
+                                <a class="group-item" href="">Çocuk Oyun Evi</a>
+                                <a class="group-item" href="">Oyuncak Bebek</a>
+                                <a class="group-item" href="">Oyuncak Mutfak</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Erkek Çocuk</a>
+                                <a class="group-item" href="">Sweatshirt</a>
+                                <a class="group-item" href="">Spor Ayakkabı</a>
+                                <a class="group-item" href="">Eşofman</a>
+                                <a class="group-item" href="">İç Giyim & Pijama</a>
+                                <a class="group-item" href="">Tişört & Atlet</a>
+                                <a class="group-item" href="">Günlük Ayakkabı</a>
+                                <a class="group-item" href="">Okul Çantası</a>
+                                <a class="group-item" href="">Şort</a>
+                                <a class="group-item" href="">Gömlek</a>
+                                <a class="group-item" href="">Mont</a>
+                                <a class="group-item" href="">Oyuncak Traktör</a>
+                                <a class="group-item" href="">Akülü Araba</a>
+                                <a class="group-item" href="">Kumandalı Araba</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Bebek Bakım</a>
+                                <a class="group-item" href="">Banyo & Tuvalet</a>
+                                <a class="group-item" href="">Bebek Şampuanı</a>
+                                <a class="group-item" href="">Krem & Yağlar</a>
+                                <a class="group-item" href="">Bebek Çantası</a>
+                                <a class="group-header" href="">Oyuncak</a>
+                                <a class="group-item" href="">Eğitici Oyuncaklar</a>
+                                <a class="group-item" href="">Oyuncak Araba</a>
+                                <a class="group-item" href="">Oyuncak Bebek</a>
+                                <a class="group-item" href="">Bebek & Okul Öncesi</a>
+                                <a class="group-item" href="">Kumandalı Oyuncak</a>
+                                <a class="group-item" href="">Robot Oyuncak</a>
+                                <a class="group-item" href="">Oyun Hamuru</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Taşıma & Güvenlik</a>
+                                <a class="group-item" href="">Bebek Arabası & Puset</a>
+                                <a class="group-item" href="">Park Yatak</a>
+                                <a class="group-item" href="">Ana Kucağı</a>
+                                <a class="group-item" href="">Portbebe & Kanguru</a>
+                                <a class="group-item" href="">Yürüteç</a>
+                                <a class="group-item" href="">Oto Koltuğu</a>
+                                <a class="group-header" href="">Bebek Emzirme</a>
+                                <a class="group-item" href="">Biberon & Emzik</a>
+                                <a class="group-item" href="">Göğüs Pompası</a>
+                                <a class="group-item" href="">Mama Sandalyesi</a>
+                                <a class="group-item" href="">Mama Önlüğü</a>
+                                <a class="group-item" href="">Alıştırma Bardağı</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="nav-item">
-                <h3 class="nav-item-header">Ayakkabı & Çanta</h3>
-                <div class="nav-item-dropdown">
-                    <div class="dropdown-container">
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Kadın Ayakkabı</a>
-                            <a class="group-item" href="">Spor Ayakkabı</a>
-                            <a class="group-item" href="">Topuklu Ayakkabı</a>
-                            <a class="group-item" href="">Günlük Ayakkabı</a>
-                            <a class="group-item" href="">Bot & Bootie</a>
-                            <a class="group-item" href="">Sandalet</a>
-                            <a class="group-item" href="">Terlik</a>
-                            <a class="group-header" href="">Giyim</a>
-                            <a class="group-item" href="">Omuz Çantası</a>
-                            <a class="group-item" href="">Sırt Çantası</a>
-                            <a class="group-item" href="">Cüzdan</a>
-                            <a class="group-item" href="">Spor Çantası</a>
-                            <a class="group-item" href="">Bel Çantası</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Erkek Ayakkabı</a>
-                            <a class="group-item" href="">Spor Ayakkabı</a>
-                            <a class="group-item" href="">Günlük Ayakkabı</a>
-                            <a class="group-item" href="">Klasik Ayakkabı</a>
-                            <a class="group-item" href="">Bot</a>
-                            <a class="group-item" href="">Sneaker</a>
-                            <a class="group-item" href="">Koşu Ayakkabısı</a>
-                            <a class="group-item" href="">Krampon</a>
-                            <a class="group-header" href="">Erkek Çanta</a>
-                            <a class="group-item" href="">Sırt Çantası</a>
-                            <a class="group-item" href="">Postacı Çantası</a>
-                            <a class="group-item" href="">Cüzdan & Kartlık</a>
-                            <a class="group-item" href="">Spor Çantası</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Çocuk Ayakkabı</a>
-                            <a class="group-item" href="">Spor Ayakkabı</a>
-                            <a class="group-item" href="">Günlük Ayakkabı</a>
-                            <a class="group-item" href="">Babet</a>
-                            <a class="group-header" href="">Çocuk Çanta</a>
-                            <a class="group-item" href="">Sırt Çantası</a>
-                            <a class="group-item" href="">Okul Çantası</a>
-                            <a class="group-header" href="">Lüks & Designer</a>
-                            <a class="group-item" href="">Lüks Çanta</a>
-                            <a class="group-item" href="">Lüks Ayakkabı</a>
-                            <a class="group-item" href="">Tasarım Çanta</a>
-                            <a class="group-item" href="">Tasarım Ayakkabı</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-item">
-                <h3 class="nav-item-header">Saat & Aksesuar</h3>
-                <div class="nav-item-dropdown">
-                    <div class="dropdown-container">
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Kadın</a>
-                            <a class="group-item" href="">Saat</a>
-                            <a class="group-item" href="">Güneş Gözlüğü</a>
-                            <a class="group-item" href="">Takı</a>
-                            <a class="group-item" href="">Cüzdan</a>
-                            <a class="group-item" href="">Kemer</a>
-                            <a class="group-item" href="">Şapka</a>
-                            <a class="group-item" href="">Atkı Bere Eldiven</a>
-                            <a class="group-item" href="">Şal & Fular</a>
-                            <a class="group-item" href="">Şemsiye</a>
-                            <a class="group-item" href="">Gözlük Kabı</a>
-                            <a class="group-item" href="">Saç Aksesuarı</a>
-                            <a class="group-item" href="">Hasır Bilezik</a>
-                            <a class="group-item" href="">Burma Bilezik</a>
-                            <a class="group-item" href="">22 Ayar Bilezik</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Takı & Mücevher</a>
-                            <a class="group-item" href="">Kolye</a>
-                            <a class="group-item" href="">Küpe</a>
-                            <a class="group-item" href="">Bileklik</a>
-                            <a class="group-item" href="">Halhal</a>
-                            <a class="group-item" href="">Yüzük</a>
-                            <a class="group-item" href="">Altın</a>
-                            <a class="group-item" href="">Piercing</a>
-                            <a class="group-header" href="">Elektronik Aksesuarlar</a>
-                            <a class="group-item" href="">Telefon Kılıfı</a>
-                            <a class="group-item" href="">Akıllı Saat</a>
-                            <a class="group-item" href="">Akıllı Bileklik</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Erkek</a>
-                            <a class="group-item" href="">Saat</a>
-                            <a class="group-item" href="">Güneş Gözlüğü</a>
-                            <a class="group-item" href="">Cüzdan & Kartlık</a>
-                            <a class="group-item" href="">Kemer</a>
-                            <a class="group-item" href="">Bileklik</a>
-                            <a class="group-item" href="">Şapka Bere Eldiven</a>
-                            <a class="group-item" href="">Kravat</a>
-                            <a class="group-item" href="">Valiz</a>
-                            <a class="group-header" href="">Çocuk Aksesuar</a>
-                            <a class="group-item" href="">Saat</a>
-                            <a class="group-item" href="">Güneş Gözlüğü</a>
-                            <a class="group-item" href="">Şapka</a>
+                <div class="nav-item">
+                    <h3 class="nav-item-header">Ev & Yaşam</h3>
+                    <div class="nav-item-dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Sofra & Mutfak</a>
+                                <a class="group-item" href="">Yemek Takımı</a>
+                                <a class="group-item" href="">Çatal Kaşık Bıçak Seti</a>
+                                <a class="group-item" href="">Baharat Takımı</a>
+                                <a class="group-item" href="">Bardak</a>
+                                <a class="group-item" href="">Fırın & Kek Kalıbı</a>
+                                <a class="group-item" href="">Çaydanlık</a>
+                                <a class="group-item" href="">Tencere Seti</a>
+                                <a class="group-header" href="">Banyo</a>
+                                <a class="group-item" href="">Havlu & Havlu Seti</a>
+                                <a class="group-item" href="">Bornoz</a>
+                                <a class="group-item" href="">Banyo Seti</a>
+                                <a class="group-item" href="">Banyo Paspası</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Ev Tekstili</a>
+                                <a class="group-item" href="">Yatak Odası</a>
+                                <a class="group-item" href="">Halı & Kilim & Paspas</a>
+                                <a class="group-item" href="">Perde</a>
+                                <a class="group-item" href="">Nevresim Takımı</a>
+                                <a class="group-item" href="">Yastık</a>
+                                <a class="group-item" href="">Kırlent ve Kılıfı</a>
+                                <a class="group-header" href="">Ev Dekorasyon</a>
+                                <a class="group-item" href="">Dekoratif Aksesuar</a>
+                                <a class="group-item" href="">Tablo</a>
+                                <a class="group-item" href="">Duvar Saati</a>
+                                <a class="group-item" href="">Ayna</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Aydınlatma</a>
+                                <a class="group-item" href="">Avize</a>
+                                <a class="group-item" href="">Lambader</a>
+                                <a class="group-item" href="">Abajur</a>
+                                <a class="group-header" href="">Mobilya</a>
+                                <a class="group-item" href="">Salon & Oturma Odası</a>
+                                <a class="group-item" href="">Yatak Odası</a>
+                                <a class="group-item" href="">Bahçe Mobilyası</a>
+                                <a class="group-item" href="">Çalışma Odası</a>
+                                <a class="group-header" href="">Ev Gereçleri</a>
+                                <a class="group-item" href="">Düzenleyici</a>
+                                <a class="group-item" href="">Çamaşırlık</a>
+                                <a class="group-item" href="">Sepet & Saklama Kutusu</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Hobi</a>
+                                <a class="group-item" href="">Kitap</a>
+                                <a class="group-item" href="">Puzzle</a>
+                                <a class="group-item" href="">Boya & Resim</a>
+                                <a class="group-item" href="">Kutu Oyunları</a>
+                                <a class="group-header" href="">Kırtasiye & Ofis</a>
+                                <a class="group-item" href="">Defter</a>
+                                <a class="group-item" href="">Kalem</a>
+                                <a class="group-header" href="">Spor & Outdoor</a>
+                                <a class="group-item" href="">Koşu Bandı</a>
+                                <a class="group-item" href="">Dumbell & Ağırlık</a>
+                                <a class="group-item" href="">Pilates & Yoga</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Otomobil & Motosiklet</a>
+                                <a class="group-item" href="">Oto Aksesuar</a>
+                                <a class="group-item" href="">Oto Paspası</a>
+                                <a class="group-item" href="">Oto Lastik</a>
+                                <a class="group-item" href="">Kask</a>
+                                <a class="group-header" href="">Yapı Market</a>
+                                <a class="group-item" href="">Banyo Yapı Malzemeleri</a>
+                                <a class="group-item" href="">Elektrikli El Aleti</a>
+                                <a class="group-item" href="">Hırdavat Ürünleri</a>
+                                <a class="group-item" href="">Boya</a>
+                                <a class="group-item" href="">Matkap</a>
+                                <a class="group-item" href="">Ampul</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="nav-item">
-                <h3 class="nav-item-header">Elektronik</h3>
-                <div class="nav-item-dropdown">
-                    <div class="dropdown-container">
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Küçük Ev Aletleri</a>
-                            <a class="group-item" href="">Süpürge</a>
-                            <a class="group-item" href="">Ütü</a>
-                            <a class="group-item" href="">Robot Süpürge</a>
-                            <a class="group-item" href="">Kahve Makinesi</a>
-                            <a class="group-item" href="">Blender</a>
-                            <a class="group-item" href="">Çay Makinesi</a>
-                            <a class="group-item" href="">Tost Makinesi</a>
-                            <a class="group-item" href="">Waffle Makinesi</a>
-                            <a class="group-item" href="">Tartı</a>
-                            <a class="group-header" href="">Giyilebilir Teknoloji</a>
-                            <a class="group-item" href="">Akıllı Saat</a>
-                            <a class="group-item" href="">Akıllı Bileklik</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Telefon</a>
-                            <a class="group-item" href="">Cep Telefonu</a>
-                            <a class="group-item" href="">Kapak & Kılıf</a>
-                            <a class="group-item" href="">Şarj Cihazları</a>
-                            <a class="group-item" href="">Powerbank</a>
-                            <a class="group-header" href="">Bilgisayar & Tablet</a>
-                            <a class="group-item" href="">Laptop</a>
-                            <a class="group-item" href="">Tablet</a>
-                            <a class="group-item" href="">Bilgisayar Bileşenleri</a>
-                            <a class="group-item" href="">Monitör</a>
-                            <a class="group-item" href="">Yazıcı & Tarayıcı</a>
-                            <a class="group-item" href="">Çevre Birimleri</a>
-                            <a class="group-item" href="">Ağ & Modem</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">TV & Görüntü & Ses</a>
-                            <a class="group-item" href="">Televizyon</a>
-                            <a class="group-item" href="">Soundbar</a>
-                            <a class="group-item" href="">Projeksiyon Cihazı</a>
-                            <a class="group-item" href="">Media Player</a>
-                            <a class="group-item" href="">Hoparlör</a>
-                            <a class="group-item" href="">Kulaklık</a>
-                            <a class="group-header" href="">Kişisel Bakım Aletleri</a>
-                            <a class="group-item" href="">Saç Düzleştirici</a>
-                            <a class="group-item" href="">Tıraş Makinesi</a>
-                            <a class="group-item" href="">Saç Maşası</a>
-                            <a class="group-item" href="">Saç Kurutma Makinesi</a>
-                            <a class="group-item" href="">Epilasyon Aleti</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Beyaz Eşya</a>
-                            <a class="group-item" href="">Buzdolabı</a>
-                            <a class="group-item" href="">Çamaşır Makinesi</a>
-                            <a class="group-item" href="">Bulaşık Makinesi</a>
-                            <a class="group-item" href="">Ankastre</a>
-                            <a class="group-item" href="">Derin Dondurucu</a>
-                            <a class="group-item" href="">Klima</a>
-                            <a class="group-item" href="">Kombi</a>
-                            <a class="group-header" href="">Elektronik Aksesuarlar</a>
-                            <a class="group-item" href="">Bilgisayar Aksesuarları</a>
-                            <a class="group-item" href="">Telefon Aksesuarları</a>
-                            <a class="group-item" href="">TV Aksesuarları</a>
-                            <a class="group-item" href="">Veri Depolama</a>
-                        </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Oyunculara Özel</a>
-                            <a class="group-item" href="">Playstation</a>
-                            <a class="group-item" href="">Xbox</a>
-                            <a class="group-item" href="">Nintendo</a>
-                            <a class="group-item" href="">Playstation Oyunları</a>
-                            <a class="group-item" href="">Konsol Aksesuarları</a>
-                            <a class="group-item" href="">Oyuncu Bilgisayarı</a>
-                            <a class="group-item" href="">Oyuncu Donanımları</a>
-                            <a class="group-item" href="">Oyuncu Monitörleri</a>
-                            <a class="group-header" href="">Foto & Kamera</a>
-                            <a class="group-item" href="">Aksiyon Kamera</a>
-                            <a class="group-item" href="">Fotoğraf Makinesi</a>
-                            <a class="group-header" href="">Dijital Kod & Ürünler</a>
+                <div class="nav-item">
+                    <h3 class="nav-item-header">Süpermarket</h3>
+                    <div class="nav-item-dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Ev & Temizlik</a>
+                                <a class="group-item" href="">Çamaşır Yıkama</a>
+                                <a class="group-item" href="">Bulaşık Yıkama</a>
+                                <a class="group-item" href="">Ev Temizlik</a>
+                                <a class="group-item" href="">Paspas & Mop</a>
+                                <a class="group-item" href="">Kağıt Ürünleri</a>
+                                <a class="group-header" href="">Gıda</a>
+                                <a class="group-item" href="">Çay</a>
+                                <a class="group-item" href="">Kahve</a>
+                                <a class="group-item" href="">Kuruyemiş</a>
+                                <a class="group-item" href="">Kahvaltılık</a>
+                                <a class="group-item" href="">Organik Ürünler</a>
+                                <a class="group-item" href="">Diyabetik Ürünler</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Kişisel Bakım</a>
+                                <a class="group-item" href="">Saç Bakımı</a>
+                                <a class="group-item" href="">Ağda & Epilasyon</a>
+                                <a class="group-item" href="">Banyo & Duş</a>
+                                <a class="group-item" href="">Ağız Bakım</a>
+                                <a class="group-item" href="">Cilt Bakımı</a>
+                                <a class="group-item" href="">Vücut Bakımı</a>
+                                <a class="group-header" href="">Sağlık & Spor</a>
+                                <a class="group-item" href="">Cinsel Sağlık</a>
+                                <a class="group-item" href="">Hijyenik Ped</a>
+                                <a class="group-item" href="">Sporcu Besinleri</a>
+                                <a class="group-item" href="">Vitamin & Ek Gıda</a>
+                                <a class="group-item" href="">Hasta Bezi & Temizlik</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Petshop</a>
+                                <a class="group-item" href="">Kedi Maması</a>
+                                <a class="group-item" href="">Kedi Kumu</a>
+                                <a class="group-item" href="">Köpek Maması</a>
+                                <a class="group-item" href="">Köpek Tasması</a>
+                                <a class="group-item" href="">Kuş Ürünleri</a>
+                                <a class="group-item" href="">Akvaryum Ürünleri</a>
+                                <a class="group-header" href="">Bebek Bakım</a>
+                                <a class="group-item" href="">Süt Arttırıcı İçecekler</a>
+                                <a class="group-item" href="">Bebek Ek Besin</a>
+                                <a class="group-item" href="">Bebek Bezi</a>
+                                <a class="group-item" href="">Islak Mendil & Havlu</a>
+                                <a class="group-item" href="">Bebek Kozmetik</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="nav-item">
-                <h3 class="nav-item-header">Spor & Outdoor</h3>
-                <div class="nav-item-dropdown">
-                    <div class="dropdown-container">
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Spor Giyim</a>
-                            <a class="group-item" href="">Spor Tişört</a>
-                            <a class="group-item" href="">Spor Şort</a>
-                            <a class="group-item" href="">Spor Tayt</a>
-                            <a class="group-item" href="">Sporcu Sütyeni</a>
-                            <a class="group-item" href="">Eşofman</a>
-                            <a class="group-item" href="">Spor Sweatshirt</a>
-                            <a class="group-item" href="">Yağmurluk</a>
-                            <a class="group-item" href="">Spor Yelek</a>
-                            <a class="group-item" href="">Spor Atlet</a>
-                            <a class="group-item" href="">Forma</a>
-                            <a class="group-item" href="">Spor Mont</a>
-                            <a class="group-item" href="">Spor Şapka</a>
-                            <a class="group-item" href="">Çorap</a>
+                <div class="nav-item">
+                    <h3 class="nav-item-header">Kozmetik</h3>
+                    <div class="nav-item-dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Makyaj</a>
+                                <a class="group-item" href="">Göz Makyajı</a>
+                                <a class="group-item" href="">Ten Makyajı</a>
+                                <a class="group-item" href="">Dudak Makyajı</a>
+                                <a class="group-item" href="">Makyaj Seti</a>
+                                <a class="group-item" href="">Oje & Aseton</a>
+                                <a class="group-item" href="">Fondöten</a>
+                                <a class="group-header" href="">Parfüm & Deodorant</a>
+                                <a class="group-item" href="">Parfüm</a>
+                                <a class="group-item" href="">Parfüm Setleri</a>
+                                <a class="group-item" href="">Deodorant & Roll-on</a>
+                                <a class="group-item" href="">Vücut Spreyi</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Cilt Bakımı</a>
+                                <a class="group-item" href="">Yüz Kremi</a>
+                                <a class="group-item" href="">Yüz Temizleme</a>
+                                <a class="group-item" href="">Yüz Maskesi</a>
+                                <a class="group-item" href="">Göz Bakımı</a>
+                                <a class="group-item" href="">Güneş Koruyucu</a>
+                                <a class="group-item" href="">Cilt Serumu</a>
+                                <a class="group-item" href="">El & Ayak Bakımı</a>
+                                <a class="group-header" href="">Saç Bakımı</a>
+                                <a class="group-item" href="">Şampuan</a>
+                                <a class="group-item" href="">Saç Şekillendirici</a>
+                                <a class="group-item" href="">Saç Serumu & Maskesi</a>
+                                <a class="group-item" href="">Saç Boyası</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Epilasyon & Tıraş</a>
+                                <a class="group-item" href="">Tüy Dökücü</a>
+                                <a class="group-item" href="">Ağda</a>
+                                <a class="group-item" href="">Tıraş Bıçağı</a>
+                                <a class="group-item" href="">Epilatör</a>
+                                <a class="group-item" href="">Tıraş Köpüğü</a>
+                                <a class="group-header" href="">Genel Bakım</a>
+                                <a class="group-item" href="">Cinsel Sağlık</a>
+                                <a class="group-item" href="">Hijyenik Ped</a>
+                                <a class="group-item" href="">Vücut Bakımı</a>
+                                <a class="group-item" href="">El ve Ayak Bakımı</a>
+                                <a class="group-item" href="">Duş Jeli ve Kremi</a>
+                                <a class="group-item" href="">Bakım Yağları</a>
+                            </div>
                         </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Spor Ayakkabı</a>
-                            <a class="group-item" href="">Sneaker</a>
-                            <a class="group-item" href="">Koşu Ayakkabısı</a>
-                            <a class="group-item" href="">Halı Saha Ayakkabısı</a>
-                            <a class="group-item" href="">Basketbol Ayakkabısı</a>
-                            <a class="group-item" href="">Yürüyüş Ayakkabısı</a>
-                            <a class="group-item" href="">Outdoor Ayakkabı</a>
-                            <a class="group-item" href="">Tenis Ayakkabısı</a>
-                            <a class="group-item" href="">Voleybol Ayakkabısı</a>
-                            <a class="group-item" href="">Fitness Ayakkabısı</a>
-                            <a class="group-item" href="">Deniz Ayakkabısı</a>
-                            <a class="group-item" href="">Kaykay Ayakkabısı</a>
-                            <a class="group-item" href="">Outdoor Bot</a>
-                            <a class="group-item" href="">Terlik</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <h3 class="nav-item-header">Ayakkabı & Çanta</h3>
+                    <div class="nav-item-dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Kadın Ayakkabı</a>
+                                <a class="group-item" href="">Spor Ayakkabı</a>
+                                <a class="group-item" href="">Topuklu Ayakkabı</a>
+                                <a class="group-item" href="">Günlük Ayakkabı</a>
+                                <a class="group-item" href="">Bot & Bootie</a>
+                                <a class="group-item" href="">Sandalet</a>
+                                <a class="group-item" href="">Terlik</a>
+                                <a class="group-header" href="">Giyim</a>
+                                <a class="group-item" href="">Omuz Çantası</a>
+                                <a class="group-item" href="">Sırt Çantası</a>
+                                <a class="group-item" href="">Cüzdan</a>
+                                <a class="group-item" href="">Spor Çantası</a>
+                                <a class="group-item" href="">Bel Çantası</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Erkek Ayakkabı</a>
+                                <a class="group-item" href="">Spor Ayakkabı</a>
+                                <a class="group-item" href="">Günlük Ayakkabı</a>
+                                <a class="group-item" href="">Klasik Ayakkabı</a>
+                                <a class="group-item" href="">Bot</a>
+                                <a class="group-item" href="">Sneaker</a>
+                                <a class="group-item" href="">Koşu Ayakkabısı</a>
+                                <a class="group-item" href="">Krampon</a>
+                                <a class="group-header" href="">Erkek Çanta</a>
+                                <a class="group-item" href="">Sırt Çantası</a>
+                                <a class="group-item" href="">Postacı Çantası</a>
+                                <a class="group-item" href="">Cüzdan & Kartlık</a>
+                                <a class="group-item" href="">Spor Çantası</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Çocuk Ayakkabı</a>
+                                <a class="group-item" href="">Spor Ayakkabı</a>
+                                <a class="group-item" href="">Günlük Ayakkabı</a>
+                                <a class="group-item" href="">Babet</a>
+                                <a class="group-header" href="">Çocuk Çanta</a>
+                                <a class="group-item" href="">Sırt Çantası</a>
+                                <a class="group-item" href="">Okul Çantası</a>
+                                <a class="group-header" href="">Lüks & Designer</a>
+                                <a class="group-item" href="">Lüks Çanta</a>
+                                <a class="group-item" href="">Lüks Ayakkabı</a>
+                                <a class="group-item" href="">Tasarım Çanta</a>
+                                <a class="group-item" href="">Tasarım Ayakkabı</a>
+                            </div>
                         </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Spor Malzemeleri</a>
-                            <a class="group-item" href="">Deniz & Plaj</a>
-                            <a class="group-item" href="">Kaykay</a>
-                            <a class="group-item" href="">Paten</a>
-                            <a class="group-item" href="">Kamp Malzemeleri</a>
-                            <a class="group-item" href="">Dağcılık & Tırmanış</a>
-                            <a class="group-item" href="">Aksiyon Kamera</a>
-                            <a class="group-item" href="">Çadır Uyku Tulumu</a>
-                            <a class="group-item" href="">Su Sporu Malzemeleri</a>
-                            <a class="group-item" href="">Dalış Malzemeleri</a>
-                            <a class="group-item" href="">Balıkçılık Malzemeleri</a>
-                            <a class="group-item" href="">Tenis Malzemeleri</a>
-                            <a class="group-item" href="">Kayak ve Snowboard</a>
-                            <a class="group-item" href="">Okçuluk</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <h3 class="nav-item-header">Saat & Aksesuar</h3>
+                    <div class="nav-item-dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Kadın</a>
+                                <a class="group-item" href="">Saat</a>
+                                <a class="group-item" href="">Güneş Gözlüğü</a>
+                                <a class="group-item" href="">Takı</a>
+                                <a class="group-item" href="">Cüzdan</a>
+                                <a class="group-item" href="">Kemer</a>
+                                <a class="group-item" href="">Şapka</a>
+                                <a class="group-item" href="">Atkı Bere Eldiven</a>
+                                <a class="group-item" href="">Şal & Fular</a>
+                                <a class="group-item" href="">Şemsiye</a>
+                                <a class="group-item" href="">Gözlük Kabı</a>
+                                <a class="group-item" href="">Saç Aksesuarı</a>
+                                <a class="group-item" href="">Hasır Bilezik</a>
+                                <a class="group-item" href="">Burma Bilezik</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Takı & Mücevher</a>
+                                <a class="group-item" href="">Kolye</a>
+                                <a class="group-item" href="">Küpe</a>
+                                <a class="group-item" href="">Bileklik</a>
+                                <a class="group-item" href="">Halhal</a>
+                                <a class="group-item" href="">Yüzük</a>
+                                <a class="group-item" href="">Altın</a>
+                                <a class="group-item" href="">Piercing</a>
+                                <a class="group-header" href="">Elektronik Aksesuarlar</a>
+                                <a class="group-item" href="">Telefon Kılıfı</a>
+                                <a class="group-item" href="">Akıllı Saat</a>
+                                <a class="group-item" href="">Akıllı Bileklik</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Erkek</a>
+                                <a class="group-item" href="">Saat</a>
+                                <a class="group-item" href="">Güneş Gözlüğü</a>
+                                <a class="group-item" href="">Cüzdan & Kartlık</a>
+                                <a class="group-item" href="">Kemer</a>
+                                <a class="group-item" href="">Bileklik</a>
+                                <a class="group-item" href="">Şapka Bere Eldiven</a>
+                                <a class="group-item" href="">Kravat</a>
+                                <a class="group-item" href="">Valiz</a>
+                                <a class="group-header" href="">Çocuk Aksesuar</a>
+                                <a class="group-item" href="">Saat</a>
+                                <a class="group-item" href="">Güneş Gözlüğü</a>
+                                <a class="group-item" href="">Şapka</a>
+                            </div>
                         </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Bisiklet</a>
-                            <a class="group-item" href="">Şehir Bisikleti</a>
-                            <a class="group-item" href="">Dağ Bisikleti</a>
-                            <a class="group-header" href="">Fitness Kondisyon</a>
-                            <a class="group-item" href="">Pilates Malzemeleri</a>
-                            <a class="group-item" href="">Fitness Aletleri</a>
-                            <a class="group-item" href="">Kondisyon Bisikleti</a>
-                            <a class="group-item" href="">Koşu Bandı</a>
-                            <a class="group-item" href="">Yoga Malzemeleri</a>
-                            <a class="group-item" href="">Dambıl Seti</a>
-                            <a class="group-item" href="">Ağırlık Plakaları</a>
-                            <a class="group-item" href="">Barfiks</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <h3 class="nav-item-header">Elektronik</h3>
+                    <div class="nav-item-dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Küçük Ev Aletleri</a>
+                                <a class="group-item" href="">Süpürge</a>
+                                <a class="group-item" href="">Ütü</a>
+                                <a class="group-item" href="">Robot Süpürge</a>
+                                <a class="group-item" href="">Kahve Makinesi</a>
+                                <a class="group-item" href="">Blender</a>
+                                <a class="group-item" href="">Çay Makinesi</a>
+                                <a class="group-item" href="">Tost Makinesi</a>
+                                <a class="group-item" href="">Waffle Makinesi</a>
+                                <a class="group-item" href="">Tartı</a>
+                                <a class="group-header" href="">Giyilebilir Teknoloji</a>
+                                <a class="group-item" href="">Akıllı Saat</a>
+                                <a class="group-item" href="">Akıllı Bileklik</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Telefon</a>
+                                <a class="group-item" href="">Cep Telefonu</a>
+                                <a class="group-item" href="">Kapak & Kılıf</a>
+                                <a class="group-item" href="">Şarj Cihazları</a>
+                                <a class="group-item" href="">Powerbank</a>
+                                <a class="group-header" href="">Bilgisayar & Tablet</a>
+                                <a class="group-item" href="">Laptop</a>
+                                <a class="group-item" href="">Tablet</a>
+                                <a class="group-item" href="">Bilgisayar Bileşenleri</a>
+                                <a class="group-item" href="">Monitör</a>
+                                <a class="group-item" href="">Yazıcı & Tarayıcı</a>
+                                <a class="group-item" href="">Çevre Birimleri</a>
+                                <a class="group-item" href="">Ağ & Modem</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">TV & Görüntü & Ses</a>
+                                <a class="group-item" href="">Televizyon</a>
+                                <a class="group-item" href="">Soundbar</a>
+                                <a class="group-item" href="">Projeksiyon Cihazı</a>
+                                <a class="group-item" href="">Hoparlör</a>
+                                <a class="group-item" href="">Kulaklık</a>
+                                <a class="group-header" href="">Kişisel Bakım Aletleri</a>
+                                <a class="group-item" href="">Saç Düzleştirici</a>
+                                <a class="group-item" href="">Tıraş Makinesi</a>
+                                <a class="group-item" href="">Saç Maşası</a>
+                                <a class="group-item" href="">Saç Kurutma Makinesi</a>
+                                <a class="group-item" href="">Epilasyon Aleti</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Beyaz Eşya</a>
+                                <a class="group-item" href="">Buzdolabı</a>
+                                <a class="group-item" href="">Çamaşır Makinesi</a>
+                                <a class="group-item" href="">Bulaşık Makinesi</a>
+                                <a class="group-item" href="">Ankastre</a>
+                                <a class="group-item" href="">Derin Dondurucu</a>
+                                <a class="group-item" href="">Klima</a>
+                                <a class="group-item" href="">Kombi</a>
+                                <a class="group-header" href="">Elektronik Aksesuarlar</a>
+                                <a class="group-item" href="">Bilgisayar Aksesuarları</a>
+                                <a class="group-item" href="">Telefon Aksesuarları</a>
+                                <a class="group-item" href="">TV Aksesuarları</a>
+                                <a class="group-item" href="">Veri Depolama</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Oyunculara Özel</a>
+                                <a class="group-item" href="">Playstation</a>
+                                <a class="group-item" href="">Xbox</a>
+                                <a class="group-item" href="">Nintendo</a>
+                                <a class="group-item" href="">Playstation Oyunları</a>
+                                <a class="group-item" href="">Konsol Aksesuarları</a>
+                                <a class="group-item" href="">Oyuncu Bilgisayarı</a>
+                                <a class="group-item" href="">Oyuncu Donanımları</a>
+                                <a class="group-item" href="">Oyuncu Monitörleri</a>
+                                <a class="group-header" href="">Foto & Kamera</a>
+                                <a class="group-item" href="">Aksiyon Kamera</a>
+                                <a class="group-item" href="">Fotoğraf Makinesi</a>
+                                <a class="group-header" href="">Dijital Kod & Ürünler</a>
+                            </div>
                         </div>
-                        <div class="dropdown-item-group">
-                            <a class="group-header" href="">Sporcu Besinleri</a>
-                            <a class="group-item" href="">Protein Tozu</a>
-                            <a class="group-item" href="">Amino Asit</a>
-                            <a class="group-item" href="">Karbonhidrat</a>
-                            <a class="group-item" href="">L-Karnitin (CLA)</a>
-                            <a class="group-item" href="">Güç ve Performans</a>
-                            <a class="group-item" href="">Gıda Takviyesi & Vitaminler</a>
-                            <a class="group-item" href="">Kreatin</a>
-                            <a class="group-item" href="">Protein Bar</a>
-                            <a class="group-item" href="">Shaker</a>
-                            <a class="group-header" href="">Top</a>
-                            <a class="group-item" href="">Basketbol Topu</a>
-                            <a class="group-item" href="">Futbol Topu</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <h3 class="nav-item-header">Spor & Outdoor</h3>
+                    <div class="nav-item-dropdown">
+                        <div class="dropdown-container">
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Spor Giyim</a>
+                                <a class="group-item" href="">Spor Tişört</a>
+                                <a class="group-item" href="">Spor Şort</a>
+                                <a class="group-item" href="">Spor Tayt</a>
+                                <a class="group-item" href="">Eşofman</a>
+                                <a class="group-item" href="">Spor Sweatshirt</a>
+                                <a class="group-item" href="">Yağmurluk</a>
+                                <a class="group-item" href="">Spor Yelek</a>
+                                <a class="group-item" href="">Spor Atlet</a>
+                                <a class="group-item" href="">Forma</a>
+                                <a class="group-item" href="">Spor Mont</a>
+                                <a class="group-item" href="">Spor Şapka</a>
+                                <a class="group-item" href="">Çorap</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Spor Ayakkabı</a>
+                                <a class="group-item" href="">Sneaker</a>
+                                <a class="group-item" href="">Koşu Ayakkabısı</a>
+                                <a class="group-item" href="">Halı Saha Ayakkabısı</a>
+                                <a class="group-item" href="">Basketbol Ayakkabısı</a>
+                                <a class="group-item" href="">Yürüyüş Ayakkabısı</a>
+                                <a class="group-item" href="">Outdoor Ayakkabı</a>
+                                <a class="group-item" href="">Tenis Ayakkabısı</a>
+                                <a class="group-item" href="">Voleybol Ayakkabısı</a>
+                                <a class="group-item" href="">Fitness Ayakkabısı</a>
+                                <a class="group-item" href="">Deniz Ayakkabısı</a>
+                                <a class="group-item" href="">Outdoor Bot</a>
+                                <a class="group-item" href="">Terlik</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Spor Malzemeleri</a>
+                                <a class="group-item" href="">Deniz & Plaj</a>
+                                <a class="group-item" href="">Kaykay</a>
+                                <a class="group-item" href="">Paten</a>
+                                <a class="group-item" href="">Kamp Malzemeleri</a>
+                                <a class="group-item" href="">Dağcılık & Tırmanış</a>
+                                <a class="group-item" href="">Çadır Uyku Tulumu</a>
+                                <a class="group-item" href="">Su Sporu Malzemeleri</a>
+                                <a class="group-item" href="">Dalış Malzemeleri</a>
+                                <a class="group-item" href="">Balıkçılık Malzemeleri</a>
+                                <a class="group-item" href="">Tenis Malzemeleri</a>
+                                <a class="group-item" href="">Kayak ve Snowboard</a>
+                                <a class="group-item" href="">Okçuluk</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Bisiklet</a>
+                                <a class="group-item" href="">Şehir Bisikleti</a>
+                                <a class="group-item" href="">Dağ Bisikleti</a>
+                                <a class="group-header" href="">Fitness Kondisyon</a>
+                                <a class="group-item" href="">Pilates Malzemeleri</a>
+                                <a class="group-item" href="">Fitness Aletleri</a>
+                                <a class="group-item" href="">Kondisyon Bisikleti</a>
+                                <a class="group-item" href="">Koşu Bandı</a>
+                                <a class="group-item" href="">Yoga Malzemeleri</a>
+                                <a class="group-item" href="">Dambıl Seti</a>
+                                <a class="group-item" href="">Ağırlık Plakaları</a>
+                                <a class="group-item" href="">Barfiks</a>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <a class="group-header" href="">Sporcu Besinleri</a>
+                                <a class="group-item" href="">Protein Tozu</a>
+                                <a class="group-item" href="">Amino Asit</a>
+                                <a class="group-item" href="">Karbonhidrat</a>
+                                <a class="group-item" href="">L-Karnitin (CLA)</a>
+                                <a class="group-item" href="">Güç ve Performans</a>
+                                <a class="group-item" href="">Gıda Takviyesi & Vitaminler</a>
+                                <a class="group-item" href="">Kreatin</a>
+                                <a class="group-item" href="">Protein Bar</a>
+                                <a class="group-item" href="">Shaker</a>
+                                <a class="group-header" href="">Top</a>
+                                <a class="group-item" href="">Basketbol Topu</a>
+                                <a class="group-item" href="">Futbol Topu</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-       </div>
     </nav>
 
     <main></main>
+
+    <div class="control-panel">
+        <div class="panel-item">
+            <i class="item-logo fa fa-home" aria-hidden="true"></i>
+            <a class="item-name" href="">Keşfet</a>
+        </div>
+        <div class="panel-item">
+            <i class="item-logo fa fa-list-ul" aria-hidden="true"></i>
+            <a class="item-name" href="">Kategoriler</a>
+        </div>
+        <div class="panel-item">
+            <i class="item-logo fa fa-shopping-cart" aria-hidden="true"></i>
+            <a class="item-name" href="">Sepetim</a>
+        </div>
+        <div class="panel-item">
+            <i class="item-logo fa fa-heart" aria-hidden="true"></i>
+            <a class="item-name" href="">Listelerim</a>
+        </div>
+        <div class="panel-item">
+            <i class="item-logo fa fa-times" aria-hidden="true"></i>
+            <a class="item-name" href="">Hepsiexpress</a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
