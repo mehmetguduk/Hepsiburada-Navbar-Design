@@ -1,0 +1,304 @@
+/*
+THIS FILE WAS DEVELOPED BY MEHMET GUDUK
+© 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
+*/
+
+header {
+        height: 90px;
+        background-color: var(--orange1);
+}
+
+div.header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        h1.hepsiburada {
+                display: inline-block;
+                color: var(--white1);
+                font-size: var(--fontsize1);
+                font-weight: 300;
+                cursor: pointer;
+        }
+
+        input.search-input {
+                min-width: 400px;
+                height: 32px;
+                border: none;
+                border-radius: 5px 0 0 5px;
+                font-size: var(--fontsize2);
+                margin-left: 10px;
+                padding-left: 12px;
+                color: var(--gray2);
+                background-color: var(--white1);
+                transition: width 0.5s;
+
+                &:focus {
+                        min-width: 500px;
+                        outline: none;
+                        font-weight: 600;
+                        border: var(--border1);
+
+                        & + i.search-icon {
+                                background-color: var(--gray2);
+                                color: var(--white1);
+                        }
+                }
+        }
+
+        h1#hepsiburada-1 {
+                margin-left: 10px;
+        }
+
+        i.search-icon {
+                font-size: 20px;
+                cursor: pointer;
+                color: var(--orange1);
+                background-color: var(--white1);
+                padding: 6px 5px;
+                border-radius: 0 5px 5px 0;
+                transition: color 0.1s, background-color 0.1s;
+                margin-right: 10px;
+
+                &:hover {
+                        background-color: var(--gray2);
+                        color: var(--white1);
+                }
+        }
+
+        h1#hepsiburada-3 {
+                display: none;
+        }
+
+        i.location-icon {
+                margin-left: 50px;
+                color: var(--white1);
+                font-size: 40px;
+                cursor: pointer;
+        }
+
+        div.location-container {
+                color: var(--white1);
+                padding-left: 5px;
+                cursor: pointer;
+
+                span.location-header {
+                        display: block;
+                        font-size: var(--fontsize4);
+                }
+
+                span.location-city {
+                        display: block;
+                        font-size: var(--fontsize2);
+                        font-weight: 600;
+                }
+        }
+}
+
+div.header-right-menu {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+
+        div.basket {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                &:hover {
+                        a.basket-total {
+                                display: inline;
+
+                                i.turkish-lira {
+                                        display: inline;
+                                }
+                        }
+
+                        i.basket-icon {
+                                color: var(--orange1);
+                                background-color: var(--white1);
+                        }
+                }
+
+                a.basket-total {
+                        display: none;
+                        color: var(--gray1);
+                        font-weight: 600;
+                        font-size: 15px;
+
+                        position: absolute;
+                        top: 35px;
+                        right: 0;
+                        background-color: var(--white1);
+                        border-radius: 5px 0 5px 5px;
+                        padding: 10px 20px;
+
+                        i.turkish-lira {
+                                margin-left: 3px;
+                        }
+                }
+
+                i.basket-icon {
+                        border-radius: 5px 5px 0 0;
+                        cursor: pointer;
+                        color: var(--white1);
+                        font-size: 30px;
+                        padding: 5px 10px 5px 6px;
+                }
+        }
+
+        div.user {
+                display: flex;
+                align-items: center;
+                border-radius: 8px;
+                box-sizing: content-box;
+
+                &:hover {
+                        background-color: var(--white1);
+
+                        i.user-icon {
+                                color: var(--orange1);
+                        }
+                }
+
+                i.user-icon {
+                        cursor: pointer;
+                        color: var(--white1);
+                        font-size: 30px;
+                        padding: 5px 10px;
+                }
+
+                div.hidden-5px {
+                        position: absolute;
+                        top: 40px;
+                        right: 0;
+                        z-index: 99;
+                        height: 5px;
+                        width: 170px;
+                }
+
+                div.user-dropdown {
+                        display: none;
+                        position: absolute;
+                        z-index: 99;
+                        top: 45px;
+                        right: 0;
+
+                        div.dropdown-container {
+                                padding: 25px 20px;
+                                background-color: var(--white2);
+                                border-radius: 8px;
+
+                                a.dropdown-item {
+                                        display: block;
+                                        color: var(--gray1);
+                                        padding: 5px 10px;
+                                        font-size: var(--fontsize2);
+                                        border-radius: 5px;
+
+                                        &:hover {
+                                                color: #ff6000;
+                                                background-color: var(--white3);
+                                                box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.011);
+                                        }
+                                }
+
+                                a.dropdown-item#location-link {
+                                        display: none;
+                                }
+
+                                a.dropdown-item:last-child {
+                                        color: var(--red1);
+                                        font-weight: 600;
+                                }
+
+                                a.dropdown-item:nth-child(6) {
+                                        color: var(--gray1);
+                                        font-weight: 600;
+                                }
+
+                                hr.dropdown-separator {
+                                        margin: 5px 10px;
+                                }
+                        }
+                }
+        }
+
+        div.user[is_active="true"] {
+                div.user-dropdown {
+                        display: block;
+                }
+        }
+}
+
+@media only screen and (max-width: 1400px) {
+        // CHANGE THIS TO :root
+        div.header-right-menu {
+                right: 10px;
+        }
+}
+
+@media only screen and (max-width: 1100px) {
+        // CHANGE THIS TO :root
+
+        div.header-container {
+                margin: 0 15px;
+        }
+
+        a.dropdown-item#location-link {
+                display: block !important;
+        }
+
+        div.location-container {
+                display: none;
+        }
+
+        i.location-icon {
+                display: none;
+        }
+}
+
+@media only screen and (max-width: 900px) {
+        input.search-input {
+                min-width: 200px !important;
+                &:hover {
+                        min-width: 200px !important;
+                }
+        }
+}
+
+@media only screen and (max-width: 650px) {
+        input.search-input {
+                position: absolute;
+                top: 90px;
+                border-radius: 0 !important;
+                width: 100%;
+                margin: 0 28.58px 0 29px !important;
+        }
+
+        i.search-icon {
+                position: absolute;
+                top: 90px;
+                right: 0;
+                border-radius: 0 !important;
+                margin-right: 0 !important;
+        }
+
+        div.basket {
+                display: none !important;
+        }
+
+        main {
+                position: absolute;
+                top: 122px;
+        }
+}
+
+@media only screen and (max-width: 500px) {
+        :root {
+                --fontsize1: 30px;
+        }
+}

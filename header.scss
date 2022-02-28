@@ -4,220 +4,267 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
 */
 
 header {
-    height: 90px;
-    background-color: var(--orange1);
+        position: relative;
+        height: 90px;
+        background-color: var(--orange1);
 }
 
 div.header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
 
-    h1.hepsiburada {
-        display: inline-block;
-        color: var(--white1);
-        font-size: var(--fontsize1);
-        font-weight: 300;
-        cursor: pointer;
-    }
-
-    h1#hepsiburada-1{
-        margin-left: 15px;
-    }
-
-    input.search-input {
-        width: 400px;
-        height: 32px;
-        border: none;
-        border-radius: 5px 0 0 5px;
-        font-size: var(--fontsize2);
-        margin-left: 15px;
-        padding-left: 12px;
-        color: var(--gray2);
-        background-color: var(--white1);
-        transition: width 0.5s;
-
-        &:focus {
-            width: 500px;
-            outline: none;
-            font-weight: 600;
-            border: var(--border1);
-
-            & + i.search-icon {
-                background-color: var(--gray2);
+        h1.hepsiburada {
+                display: inline-block;
+                font-size: var(--fontsize1);
+                font-weight: 300;
                 color: var(--white1);
-            }
+                cursor: pointer;
+
+                &#hepsiburada-3 {
+                        display: none;
+                }
         }
-    }
 
-    i.search-icon {
-        font-size: 20px;
-        cursor: pointer;
-        color: var(--orange1);
-        background-color: var(--white1);
-        padding: 6px 5px;
-        border-radius: 0 5px 5px 0;
-        transition: color 0.1s, background-color 0.1s;
-        margin-right: 15px;
-    }
+        input.search-input {
+                min-width: 400px;
+                height: 32px;
+                border: none;
+                border-radius: 5px 0 0 5px;
+                font-size: var(--fontsize2);
+                color: var(--gray2);
+                background-color: var(--white1);
+                transition: width 0.5s;
+                padding-left: 10px;
+                margin-left: 5px;
 
-    h1#hepsiburada-3 {
-        display: none;
-    }
+                &:focus {
+                        min-width: 500px;
+                        border: var(--border1);
+                        outline: none;
+                        font-weight: 600;
 
-    i.location-icon {
-        margin-left: 50px;
-        color: var(--white1);
-        font-size: 40px;
-        cursor: pointer;
-    }
-
-    div.location-container {
-        color: var(--white1);
-        padding-left: 5px;
-        cursor: pointer;
-
-        span.location-header {
-            display: block;
-            font-size: var(--fontsize4);
+                        & + i.search-icon {
+                                background-color: var(--gray2);
+                                color: var(--white1);
+                        }
+                }
         }
-        span.location-city {
-            display: block;
-            font-size: var(--fontsize2);
-            font-weight: 600;
+
+        i.search-icon {
+                font-size: 20px;
+                border-radius: 0 5px 5px 0;
+                color: var(--orange1);
+                background-color: var(--white1);
+                transition: color 0.1s, background-color 0.1s;
+                padding: 6px 5px;
+                margin-right: 5px;
+                cursor: pointer;
+
+                &:hover {
+                        background-color: var(--gray2);
+                        color: var(--white1);
+                }
         }
-    }
 }
 
 div.header-right-menu {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 25px;
-    right: 30px;
-
-    div.basket {
         display: flex;
-        align-items: center;
-        border-radius: 8px;
+        flex-direction: row;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+}
 
-        &:hover {
-            background-color: var(--white1);
+// @@@@@@@@@@ LOCATION @@@@@@@@@@
+div.location {
+        display: flex;
+        flex-direction: row;
 
-            a.basket-total {
-                display: inline;
-            }
+        i.location-icon {
+                font-size: 35px;
+                color: var(--white1);
+                cursor: pointer;
+        }
+        div.location-container {
+                color: var(--white1);
+                padding-left: 5px;
+                cursor: pointer;
 
-            i.basket-icon {
-                color: var(--orange1);
-            }
+                span.location-header {
+                        display: block;
+                        font-size: var(--fontsize4);
+                }
+                span.location-city {
+                        display: block;
+                        font-size: var(--fontsize2);
+                        font-weight: 600;
+                }
+        }
+}
+
+// @@@@@@@@@@ BASKET @@@@@@@@@@
+div.basket {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &[is_active="true"] {
+                div.basket-dropdown {
+                        display: block;
+                }
         }
 
-        a.basket-total {
-            display: none;
-            color: var(--gray1);
-            font-weight: 600;
-            margin-left: 10px;
-            padding: 5px 0;
+        &:hover {
+                i.basket-icon {
+                        color: var(--orange1);
+                        background-color: var(--white1);
+                }
         }
 
         i.basket-icon {
-            cursor: pointer;
-            margin: 0 10px;
-            color: var(--white1);
-            font-size: 30px;
-            padding: 5px 0;
-        }
-    }
-
-    div.user {
-        display: flex;
-        align-items: center;
-        border-radius: 8px;
-        box-sizing: content-box;
-
-        &:hover {
-            background-color: var(--white1);
-
-            a.user-name {
-                display: inline;
-            }
-
-            i.user-icon {
-                color: var(--orange1);
-            }
-        }
-
-        a.user-name {
-            display: none;
-            color: var(--gray1);
-            font-weight: 600;
-            padding: 5px 0 5px 10px;
-        }
-
-        i.user-icon {
-            cursor: pointer;
-            color: var(--white1);
-            font-size: 30px;
-            padding: 5px 10px;
+                font-size: 30px;
+                color: var(--white1);
+                border-radius: 5px;
+                padding: 5px 10px 5px 6px;
+                cursor: pointer;
         }
 
         div.hidden-5px {
-            position: absolute;
-            top: 40px;
-            right: 0;
-            z-index: 99;
-            height: 5px;
-            width: 180.63px;
+                position: absolute;
+                top: 40px;
+                right: 0;
+                height: 5px;
+                width: 187px;
+                background-color: yellow; // SİL BUNU
+        }
+
+        div.basket-dropdown {
+                display: none;
+                position: absolute;
+                top: 45px;
+                right: 0;
+                z-index: 99;
+
+                div.dropdown-container {
+                        border-radius: 8px;
+                        background-color: var(--white2);
+                        padding: 25px 20px;
+                        background-color: var(--white2);
+
+                        table.product-table {
+                                tbody.product-content {
+                                        // BURALAR KOMPLE DEĞİŞEBİLİR.
+                                        tr.product {
+                                                background-color: var(--white3);
+                                                border-radius: 5px;
+                                                padding: 5px 10px;
+
+                                                th.product-title {
+                                                        display: block;
+                                                }
+                                                th.product-count {
+                                                        display: inline;
+                                                }
+                                                th.product-price {
+                                                        display: inline;
+
+                                                        i.turkish-lira {
+                                                                display: inline;
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                        div.products-total {
+                                span.total {
+                                        i.turkish-lira {
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+// @@@@@@@@@@ USER @@@@@@@@@@
+div.user {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &[is_active="true"] {
+                div.user-dropdown {
+                        display: block;
+                }
+        }
+
+        &:hover {
+                i.user-icon {
+                        color: var(--orange1);
+                        background-color: var(--white1);
+                }
+        }
+
+        i.user-icon {
+                font-size: 30px;
+                color: var(--white1);
+                border-radius: 5px;
+                padding: 5px 8px;
+                cursor: pointer;
+        }
+
+        div.hidden-5px {
+                position: absolute;
+                top: 40px;
+                right: 0;
+                height: 5px;
+                width: 187px;
         }
 
         div.user-dropdown {
-            display: none;
-            position: absolute;
-            z-index: 99;
-            top: 45px;
-            right: 0;
+                display: none;
+                position: absolute;
+                top: 45px;
+                right: 0;
+                z-index: 99;
 
-            div.dropdown-container {
-                padding: 25px 20px;
-                background-color: var(--white2);
-                border-radius: 8px;
+                div.dropdown-container {
+                        border-radius: 8px;
+                        background-color: var(--white2);
+                        padding: 25px 20px;
 
-                a.dropdown-item {
-                    display: block;
-                    color: var(--gray1);
-                    padding: 5px 10px;
-                    font-size: var(--fontsize2);
-                    border-radius: 5px;
+                        a.dropdown-item {
+                                display: block;
+                                font-size: var(--fontsize2);
+                                color: var(--gray1);
+                                border-radius: 5px;
+                                padding: 5px 10px;
 
-                    &:hover {
-                        color: #ff6000;
-                        background-color: var(--white3);
-                        box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.011);
-                    }
+                                &#location-link {
+                                        display: none;
+                                }
+
+                                &:last-child {
+                                        color: var(--red1);
+                                        font-weight: 600;
+                                }
+
+                                &:nth-child(6) {
+                                        color: var(--gray1);
+                                        font-weight: 600;
+                                }
+
+                                &:hover {
+                                        color: #ff6000;
+                                        background-color: var(--white3);
+                                        box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.011);
+                                }
+                        }
+                        hr.dropdown-separator {
+                                margin: 5px 10px;
+                        }
                 }
-
-                a.dropdown-item:last-child {
-                    color: var(--red1);
-                    font-weight: 600;
-                }
-
-                a.dropdown-item:nth-child(5) {
-                    color: var(--gray1);
-                    font-weight: 600;
-                }
-
-                hr.dropdown-separator {
-                    margin: 5px 10px;
-                }
-            }
         }
-    }
-
-    div.user[is_active="true"] {
-        div.user-dropdown {
-            display: block;
-        }
-    }
 }

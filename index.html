@@ -27,35 +27,67 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
             <input class="search-input" type="text" placeholder="Ürün, kategori veya marka ara" autocomplete="off">
             <i class="search-icon fa fa-search" aria-hidden="true"></i>
             <h1 class="hepsiburada" id="hepsiburada-3">burada</h1>
-            <i class="location-icon fa fa-map-marker" aria-hidden="true"></i>
-            <div class="location-container">
-                <span class="location-header">Konum</span>
-                <span class="location-city">Ankara</span>
-            </div>
-        </div>
-        <div class="header-right-menu">
-            <div class="basket">
-                <a class="basket-total" href="">1250,20 TL</a>
-                <i class="basket-icon fa fa-shopping-cart" aria-hidden="true"></i>
-            </div>
-            <div class="user" is_active="false" onmouseleave="FOCUS_OUT()">
-                <a class="user-name" href="">Mehmet</a>
-                <i class="user-icon fa fa-user-circle" aria-hidden="true"></i>
-                <div class="hidden-5px"></div>
-                <div class="user-dropdown">
-                    <div class="dropdown-container">
-                        <a class="dropdown-item" href="">Siparişlerim</a>
-                        <a class="dropdown-item" href="">Hepsipay Cüzdanım</a>
-                        <a class="dropdown-item" href="">Kullanıcı Bilgilerim</a>
-                        <a class="dropdown-item" href="">Değerlendirmelerim</a>
-                        <a class="dropdown-item" href="">Efsaneler Kulübü</a>
-                        <hr class="dropdown-separator">
-                        <a class="dropdown-item" href="">Beğendiklerim</a>
-                        <a class="dropdown-item" href="">Tüm Listelerim</a>
-                        <hr class="dropdown-separator">
-                        <a class="dropdown-item" href="">Hediye Çeklerim</a>
-                        <a class="dropdown-item" href="">Destek Taleplerim</a>
-                        <a class="dropdown-item" href="">Çıkış Yap</a>
+            <div class="header-right-menu">
+                <div class="location">
+                    <i class="location-icon fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="location-container">
+                        <span class="location-header">Konum</span>
+                        <span class="location-city">Ankara</span>
+                    </div>
+                </div>
+                <div class="basket" is_active="false" onmouseleave="BASKET_FOCUS_OUT()">
+                    <i class="basket-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                    <div class="hidden-5px"></div>
+                    <div class="basket-dropdown">
+                        <div class="dropdown-container">
+                            <table class="product-table">
+                                <tbody class="product-content">
+                                    <tr class="product">
+                                        <th class="product-title">CANON PIXMA G2411 Tan...</th>
+                                        <th class="product-count">x1</th>
+                                        <th class="product-price">2369,98<i class="turkish-lira fa fa-try"
+                                                aria-hidden="true"></i></th>
+                                    </tr>
+                                    <tr class="product">
+                                        <th class="product-title">Philips S1223/41 Tıra...</th>
+                                        <th class="product-count">x2</th>
+                                        <th class="product-price">949,80<i class="turkish-lira fa fa-try"
+                                                aria-hidden="true"></i></th>
+                                    </tr>
+                                    <tr class="product">
+                                        <th class="product-title">Uni Baby 2060 Alfa An...</th>
+                                        <th class="product-count">x1</th>
+                                        <th class="product-price">1549,00<i class="turkish-lira fa fa-try"
+                                                aria-hidden="true"></i></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="products-total">
+                                <span class="total">4868.78<i class="turkish-lira fa fa-try"
+                                        aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user" is_active="false" onmouseleave="USER_FOCUS_OUT()">
+                    <i class="user-icon fa fa-user-circle" aria-hidden="true"></i>
+                    <div class="hidden-5px"></div>
+                    <div class="user-dropdown">
+                        <div class="dropdown-container">
+                            <a class="dropdown-item" href="">Siparişlerim</a>
+                            <a class="dropdown-item" href="">Hepsipay Cüzdanım</a>
+                            <a class="dropdown-item" href="">Kullanıcı Bilgilerim</a>
+                            <a class="dropdown-item" id="location-link" href="">Konum Bilgilerim</a>
+                            <a class="dropdown-item" href="">Değerlendirmelerim</a>
+                            <a class="dropdown-item" href="">Efsaneler Kulübü</a>
+                            <hr class="dropdown-separator">
+                            <a class="dropdown-item" href="">Beğendiklerim</a>
+                            <a class="dropdown-item" href="">Tüm Listelerim</a>
+                            <hr class="dropdown-separator">
+                            <a class="dropdown-item" href="">Hediye Çeklerim</a>
+                            <a class="dropdown-item" href="">Destek Taleplerim</a>
+                            <a class="dropdown-item" href="">Çıkış Yap</a>
+                        </div>
                     </div>
                 </div>
             </div>

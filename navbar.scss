@@ -4,14 +4,14 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
 */
 
 nav {
-    display: var(--displaynavbar);
+    display: var(--display-nav);
     height: 55px;
     background-color: var(--white1);
 }
 
 div.nav-list-container {
     position: relative;
-    margin: var(--navbarmargin);
+    margin: var(--margin-nav);
     height: 100%;
 
     div.nav-list {
@@ -42,7 +42,7 @@ div.nav-list-container {
                 height: 100%;
                 color: var(--gray1);
                 font-size: var(--fontsize2);
-                padding: var(--navitempadding);
+                padding: var(--padding-navitemheader);
                 cursor: pointer;
             }
 
@@ -60,7 +60,7 @@ div.nav-list-container {
                 div.dropdown-container {
                     display: flex;
                     flex-direction: row;
-                    margin-left: 20px;
+                    margin: var(--margin-dropdowncontainer);
 
                     div.dropdown-item-group {
                         a.group-header {
@@ -68,7 +68,7 @@ div.nav-list-container {
                             color: var(--orange1);
                             font-size: var(--fontsize4);
                             font-weight: 600;
-                            margin: var(--margingroupheader);
+                            margin: var(--margin-groupheader);
                             padding: 2px;
 
                             &:hover {
@@ -97,51 +97,58 @@ div.nav-list-container {
 
 @media only screen and (max-width: 1600px) {
     :root {
-        --navbarmargin: 0 300px;
+        --margin-nav: 0 300px;
     }
 }
+
 @media only screen and (max-width: 1500px) {
     :root {
-        --navbarmargin: 0 250px;
-        --navitempadding: 0 10px;
+        --margin-nav: 0 250px;
+        --padding-navitemheader: 0 10px;
     }
 }
+
 @media only screen and (max-width: 1400px) {
     :root {
-        --navbarmargin: 0 200px;
+        --margin-nav: 0 200px;
     }
 }
+
 @media only screen and (max-width: 1300px) {
     :root {
-        --navbarmargin: 0 150px;
+        --margin-nav: 0 150px;
     }
 }
+
 @media only screen and (max-width: 1200px) {
     :root {
-        --navbarmargin: 0 100px;
-        --navitempadding: 0 7.5px;
+        --margin-nav: 0 100px;
+        --padding-navitemheader: 0 7.5px;
     }
 }
+
 @media only screen and (max-width: 1100px) {
     :root {
-        --navbarmargin: 0 50px;
+        --margin-nav: 0 50px;
     }
 }
+
 @media only screen and (max-width: 1000px) {
     :root {
-        --navbarmargin: 0;
+        --margin-nav: 0;
     }
 }
 
 @media only screen and (max-width: 750px) {
     :root {
-        --margingroupheader: 5px 20px 5px 0px;
+        --margin-groupheader: 5px 20px 5px 0px;
+        --margin-dropdowncontainer: 5px 0 0 20px;
     }
 }
 
 @media only screen and (max-width: 650px) {
     :root {
-        --displaynavbar: none;
-        --displaycontrolpanel: flex;
+        --display-nav: none;
+        --display-controlpanel: flex;
     }
 }

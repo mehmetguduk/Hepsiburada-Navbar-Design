@@ -16,17 +16,22 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
     --gray1: #646464;
     --gray2: #4b4b4b;
     --black1: #090909;
-    --green1: #4B9B44;
+    --green1: #4b9b44;
     --fontsize1: 40px; // hepsiburada
     --fontsize2: 15px; // search-input, location-city, basket-total, user-name
     --fontsize3: 14px; // dropdown-item(user-dropdown), nav-item-header
     --fontsize4: 13px; // location-header, group-header
     --fontsize5: 12px; // group-item
-    --navbarmargin: 0 360px;
-    --navitempadding: 0 15px;
-    --displaynavbar: block;
-    --displaycontrolpanel: none;
-    --margingroupheader: 10px 20px 5px 0px;
+
+    // HEADER
+
+    // NAVBAR
+    --display-nav: block;
+    --margin-nav: 0 360px;
+    --padding-navitemheader: 0 15px;
+    --display-controlpanel: none;
+    --margin-groupheader: 10px 20px 5px 0px;
+    --margin-dropdowncontainer: 0 0 0 20px;
 }
 
 * {
