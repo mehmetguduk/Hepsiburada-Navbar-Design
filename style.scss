@@ -3,6 +3,8 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
 © 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
 */
 
+//@@@@@@@@@@@@@@@@@@@@@@@@@_VARIABLES_@@@@@@@@@@@@@@@@@@@@@@@@@
+
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Raleway&display=swap");
 
 :root {
@@ -23,6 +25,8 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
     --fontsize4: 13px; // location-header, group-header
     --fontsize5: 12px; // group-item
 }
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@_STYLE_@@@@@@@@@@@@@@@@@@@@@@@@@
 
 * {
     margin: 0;
@@ -56,6 +60,8 @@ main {
     box-shadow: inset 0px 165px 26px -156px rgba(0, 0, 0, 0.15);
 }
 
+//@@@@@@@@@@@@@@@@@@@@@@@@@_RESPONSIVE_@@@@@@@@@@@@@@@@@@@@@@@@@
+
 @media only screen and (max-width: 900px) {
     :root {
         --fontsize2: 13px;
@@ -67,5 +73,13 @@ main {
     :root {
         --fontsize4: 12px;
         --fontsize5: 11.5px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    main {
+        position: absolute;
+        top: 122px;
+        z-index: -1;
     }
 }

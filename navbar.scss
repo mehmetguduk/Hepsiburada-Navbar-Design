@@ -3,6 +3,8 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
 © 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
 */
 
+//@@@@@@@@@@@@@@@@@@@@@@@@@_STYLE_@@@@@@@@@@@@@@@@@@@@@@@@@
+
 nav {
         display: block;
         height: 55px;
@@ -95,7 +97,7 @@ div.nav-list-container {
         }
 }
 
-////////////////////////////////////////////////////////////////
+//@@@@@@@@@@@@@@@@@@@@@@@@@_RESPONSIVE_@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @media only screen and (max-width: 1600px) {
         div.nav-list-container {

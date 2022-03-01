@@ -3,6 +3,8 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
 © 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
 */
 
+//@@@@@@@@@@@@@@@@@@@@@@@@@_STYLE_@@@@@@@@@@@@@@@@@@@@@@@@@
+
 header {
         position: relative;
         height: 90px;
@@ -83,6 +85,7 @@ div.header-right-menu {
 }
 
 // @@@@@@@@@@ LOCATION @@@@@@@@@@
+
 div.location {
         display: flex;
         flex-direction: row;
@@ -156,6 +159,7 @@ div.location {
 }
 
 // @@@@@@@@@@ BASKET @@@@@@@@@@
+
 div.basket {
         display: flex;
         flex-direction: column;
@@ -283,6 +287,7 @@ div.basket {
 }
 
 // @@@@@@@@@@ USER @@@@@@@@@@
+
 div.user {
         display: flex;
         flex-direction: column;
@@ -363,7 +368,7 @@ div.user {
         }
 }
 
-////////////////////////////////////////////////////////////////
+//@@@@@@@@@@@@@@@@@@@@@@@@@_RESPONSIVE_@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @media only screen and (max-width: 1400px) {
         input.search-input {
@@ -438,5 +443,11 @@ div.user {
         }
         div.header-right-menu {
                 right: 0 !important;
+        }
+}
+
+@media only screen and (max-width: 200px) {
+        div.dropdown-container {
+                padding: 12px 8px !important;
         }
 }
