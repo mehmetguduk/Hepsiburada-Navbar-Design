@@ -24,15 +24,103 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
         <div class="header-container">
             <h1 class="hepsiburada" id="hepsiburada-1">hepsi</h1>
             <h1 class="hepsiburada" id="hepsiburada-2">burada</h1>
-            <input class="search-input" type="text" placeholder="Ürün, kategori veya marka ara" autocomplete="off">
-            <i class="search-icon fa fa-search" aria-hidden="true"></i>
+            <div class="search-container">
+                <input class="search-input" type="text" placeholder="Ürün, kategori veya marka ara" autocomplete="off">
+                <i class="search-icon fa fa-search" aria-hidden="true"></i>
+
+            </div>
             <h1 class="hepsiburada" id="hepsiburada-3">burada</h1>
             <div class="header-right-menu">
                 <div class="location">
                     <i class="location-icon fa fa-map-marker" aria-hidden="true"></i>
                     <div class="location-container">
                         <span class="location-header">Konum</span>
-                        <span class="location-city">Ankara</span>
+                        <span class="location-city">
+                            <select class="city-select" name="city">
+                                <option class="city" value="00" disabled selected>Şehir Seçin</option>
+                                <option class="city" value="06">Ankara</option>
+                                <option class="city" value="34">İstanbul</option>
+                                <option class="city" value="35">İzmir</option>
+                                <option class="city" value="01">Adana</option>
+                                <option class="city" value="02">Adıyaman</option>
+                                <option class="city" value="03">Afyonkarahisar</option>
+                                <option class="city" value="04">Ağrı</option>
+                                <option class="city" value="68">Aksaray</option>
+                                <option class="city" value="05">Amasya</option>
+                                <option class="city" value="07">Antalya</option>
+                                <option class="city" value="75">Ardahan</option>
+                                <option class="city" value="08">Artvin</option>
+                                <option class="city" value="09">Aydın</option>
+                                <option class="city" value="10">Balıkesir</option>
+                                <option class="city" value="74">Bartın</option>
+                                <option class="city" value="72">Batman</option>
+                                <option class="city" value="69">Bayburt</option>
+                                <option class="city" value="11">Bilecik</option>
+                                <option class="city" value="12">Bingöl</option>
+                                <option class="city" value="13">Bitlis</option>
+                                <option class="city" value="14">Bolu</option>
+                                <option class="city" value="15">Burdur</option>
+                                <option class="city" value="16">Bursa</option>
+                                <option class="city" value="17">Çanakkale</option>
+                                <option class="city" value="18">Çankırı</option>
+                                <option class="city" value="19">Çorum</option>
+                                <option class="city" value="20">Denizli</option>
+                                <option class="city" value="21">Diyarbakır</option>
+                                <option class="city" value="81">Düzce</option>
+                                <option class="city" value="22">Edirne</option>
+                                <option class="city" value="23">Elazığ</option>
+                                <option class="city" value="24">Erzincan</option>
+                                <option class="city" value="25">Erzurum</option>
+                                <option class="city" value="26">Eskişehir</option>
+                                <option class="city" value="27">Gaziantep</option>
+                                <option class="city" value="28">Giresun</option>
+                                <option class="city" value="29">Gümüşhane</option>
+                                <option class="city" value="30">Hakkari</option>
+                                <option class="city" value="31">Hatay</option>
+                                <option class="city" value="76">Iğdır</option>
+                                <option class="city" value="32">Isparta</option>
+                                <option class="city" value="46">Kahramanmaraş</option>
+                                <option class="city" value="78">Karabük</option>
+                                <option class="city" value="70">Karaman</option>
+                                <option class="city" value="36">Kars</option>
+                                <option class="city" value="37">Kastamonu</option>
+                                <option class="city" value="38">Kayseri</option>
+                                <option class="city" value="71">Kırıkkale</option>
+                                <option class="city" value="39">Kırklareli</option>
+                                <option class="city" value="40">Kırşehir</option>
+                                <option class="city" value="79">Kilis</option>
+                                <option class="city" value="41">Kocaeli</option>
+                                <option class="city" value="42">Konya</option>
+                                <option class="city" value="43">Kütahya</option>
+                                <option class="city" value="44">Malatya</option>
+                                <option class="city" value="45">Manisa</option>
+                                <option class="city" value="47">Mardin</option>
+                                <option class="city" value="33">Mersin</option>
+                                <option class="city" value="48">Muğla</option>
+                                <option class="city" value="49">Muş</option>
+                                <option class="city" value="50">Nevşehir</option>
+                                <option class="city" value="51">Niğde</option>
+                                <option class="city" value="52">Ordu</option>
+                                <option class="city" value="80">Osmaniye</option>
+                                <option class="city" value="53">Rize</option>
+                                <option class="city" value="54">Sakarya</option>
+                                <option class="city" value="55">Samsun</option>
+                                <option class="city" value="56">Siirt</option>
+                                <option class="city" value="57">Sinop</option>
+                                <option class="city" value="58">Sivas</option>
+                                <option class="city" value="63">Şanlıurfa</option>
+                                <option class="city" value="73">Şırnak</option>
+                                <option class="city" value="59">Tekirdağ</option>
+                                <option class="city" value="60">Tokat</option>
+                                <option class="city" value="60">Trabzon</option>
+                                <option class="city" value="62">Tunceli</option>
+                                <option class="city" value="64">Uşak</option>
+                                <option class="city" value="65">Van</option>
+                                <option class="city" value="77">Yalova</option>
+                                <option class="city" value="66">Yozgat</option>
+                                <option class="city" value="67">Zonguldak</option>
+                            </select>
+                        </span>
                     </div>
                 </div>
                 <div class="basket" is_active="false" onmouseleave="BASKET_FOCUS_OUT()">
@@ -40,31 +128,33 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
                     <div class="hidden-5px"></div>
                     <div class="basket-dropdown">
                         <div class="dropdown-container">
-                            <table class="product-table">
-                                <tbody class="product-content">
-                                    <tr class="product">
-                                        <th class="product-title">CANON PIXMA G2411 Tan...</th>
-                                        <th class="product-count">x1</th>
-                                        <th class="product-price">2369,98<i class="turkish-lira fa fa-try"
-                                                aria-hidden="true"></i></th>
-                                    </tr>
-                                    <tr class="product">
-                                        <th class="product-title">Philips S1223/41 Tıra...</th>
-                                        <th class="product-count">x2</th>
-                                        <th class="product-price">949,80<i class="turkish-lira fa fa-try"
-                                                aria-hidden="true"></i></th>
-                                    </tr>
-                                    <tr class="product">
-                                        <th class="product-title">Uni Baby 2060 Alfa An...</th>
-                                        <th class="product-count">x1</th>
-                                        <th class="product-price">1549,00<i class="turkish-lira fa fa-try"
-                                                aria-hidden="true"></i></th>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <ul class="products">
+                                <li class="product">
+                                    <div class="product-title">CANON PIXMA G...</div>
+                                    <div class="product-details">
+                                        <span class="product-count">(x1)</span><span class="product-price">2369,98<i
+                                                class="turkish-lira fa fa-try" aria-hidden="true"></i></span>
+                                    </div>
+                                </li>
+                                <li class="product">
+                                    <div class="product-title">Uni Baby 206...</div>
+                                    <div class="product-details"><span class="product-count">(x1)</span><span
+                                            class="product-price">1549,00<i class="turkish-lira fa fa-try"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </li>
+                                <li class="product">
+                                    <div class="product-title">Philips S122...</div>
+                                    <div class="product-details">
+                                        <span class="product-count">(x2)</span><span class="product-price">949,80<i
+                                                class="turkish-lira fa fa-try" aria-hidden="true"></i></span>
+                                    </div>
+                                </li>
+                            </ul>
                             <div class="products-total">
-                                <span class="total">4868.78<i class="turkish-lira fa fa-try"
+                                <span class="total">4868,78<i class="turkish-lira fa fa-try"
                                         aria-hidden="true"></i></span>
+                                <a class="basket-link" href="">Sepete Git</a>
                             </div>
                         </div>
                     </div>
@@ -430,7 +520,7 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
                     </div>
                 </div>
                 <div class="nav-item">
-                    <h3 class="nav-item-header">Süpermarket</h3>
+                    <h3 class="nav-item-header">Market</h3>
                     <div class="nav-item-dropdown">
                         <div class="dropdown-container">
                             <div class="dropdown-item-group">

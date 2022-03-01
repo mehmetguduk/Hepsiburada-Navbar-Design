@@ -1,5 +1,5 @@
 div.control-panel {
-    display: var(--displaycontrolpanel);
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -45,5 +45,33 @@ div.control-panel {
                 font-weight: 600;
             }
         }
+    }
+}
+
+////////////////////////////////////////////////////////////////
+
+@media only screen and (max-width: 650px) {
+    div.control-panel {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    i.item-logo {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    a.item-name {
+        display: none;
+    }
+    div.header-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: center;
+    }
+    :root{
+        --fontsize1: 20px
     }
 }

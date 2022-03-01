@@ -52,6 +52,9 @@ CLASS_DROPDOWN_ITEM.forEach(element => {
 
 const CLASS_BASKET = document.querySelector("div.basket");
 const CLASS_BASKET_ICON = document.querySelector("i.basket-icon");
+const CLASS_BASKET_LINK = document.querySelector("a.basket-link");
+const CLASS_PRODUCT = document.querySelectorAll("li.product");
+
 
 function BASKET_TOGGLE() {
     let is_active = (CLASS_BASKET.getAttribute("is_active") === "true");
@@ -63,3 +66,7 @@ function BASKET_FOCUS_OUT() {
 }
 
 CLASS_BASKET_ICON.addEventListener("click", BASKET_TOGGLE);
+CLASS_BASKET_LINK.addEventListener("click", BASKET_TOGGLE);
+CLASS_PRODUCT.forEach(element => {
+    element.addEventListener("click", BASKET_TOGGLE);
+})

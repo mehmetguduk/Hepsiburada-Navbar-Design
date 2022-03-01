@@ -28,44 +28,48 @@ div.header-container {
                 }
         }
 
-        input.search-input {
-                min-width: 400px;
-                height: 32px;
-                border: none;
-                border-radius: 5px 0 0 5px;
-                font-size: var(--fontsize2);
-                color: var(--gray2);
-                background-color: var(--white1);
-                transition: width 0.5s;
-                padding-left: 10px;
-                margin-left: 5px;
+        div.search-container {
+                display: flex;
+                align-items: center;
 
-                &:focus {
-                        min-width: 500px;
-                        border: var(--border1);
-                        outline: none;
-                        font-weight: 600;
+                input.search-input {
+                        width: 400px;
+                        height: 32px;
+                        border: none;
+                        border-radius: 5px 0 0 5px;
+                        font-size: var(--fontsize2);
+                        color: var(--gray2);
+                        background-color: var(--white1);
+                        padding-left: 10px;
+                        margin-left: 5px;
 
-                        & + i.search-icon {
+                        &:focus {
+                                width: 500px;
+                                border: var(--border1);
+                                outline: none;
+                                font-weight: 600;
+
+                                & + i.search-icon {
+                                        background-color: var(--gray2);
+                                        color: var(--white1);
+                                }
+                        }
+                }
+
+                i.search-icon {
+                        font-size: 20px;
+                        border-radius: 0 5px 5px 0;
+                        color: var(--orange1);
+                        background-color: var(--white1);
+                        transition: color 0.1s, background-color 0.1s;
+                        padding: 6px 5px;
+                        margin-right: 5px;
+                        cursor: pointer;
+
+                        &:hover {
                                 background-color: var(--gray2);
                                 color: var(--white1);
                         }
-                }
-        }
-
-        i.search-icon {
-                font-size: 20px;
-                border-radius: 0 5px 5px 0;
-                color: var(--orange1);
-                background-color: var(--white1);
-                transition: color 0.1s, background-color 0.1s;
-                padding: 6px 5px;
-                margin-right: 5px;
-                cursor: pointer;
-
-                &:hover {
-                        background-color: var(--gray2);
-                        color: var(--white1);
                 }
         }
 }
@@ -82,25 +86,71 @@ div.header-right-menu {
 div.location {
         display: flex;
         flex-direction: row;
+        position: relative;
+        border-radius: 5px;
+        padding: 0 8px;
+
+        &:hover {
+                background-color: var(--white1);
+                color: var(--orange1);
+
+                i.location-icon {
+                        color: var(--orange1);
+                }
+
+                div.location-container {
+                        span.location-header {
+                                color: var(--orange1);
+                        }
+                        span.location-city {
+                                select.city-select {
+                                        color: var(--orange1);
+                                        background-color: var(--white3);
+                                        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.15);
+                                }
+                        }
+                }
+        }
 
         i.location-icon {
+                color: var(--white1);
                 font-size: 35px;
-                color: var(--white1);
-                cursor: pointer;
+                margin-top: 2px;
         }
+
         div.location-container {
-                color: var(--white1);
                 padding-left: 5px;
-                cursor: pointer;
 
                 span.location-header {
                         display: block;
+                        color: var(--white1);
                         font-size: var(--fontsize4);
+                        margin-top: 3px;
                 }
                 span.location-city {
                         display: block;
-                        font-size: var(--fontsize2);
-                        font-weight: 600;
+                        margin-top: -4px;
+
+                        select.city-select {
+                                border: none;
+                                background-color: transparent;
+                                color: var(--white1);
+                                font-weight: 600;
+                                width: 120px;
+                                border-radius: 3px;
+                                appearance: none;
+                                cursor: pointer;
+
+                                &:focus {
+                                        outline: none;
+                                }
+
+                                option.city {
+                                        border: none;
+                                        padding: 2px 5px;
+                                        color: var(--gray1);
+                                }
+                        }
                 }
         }
 }
@@ -137,8 +187,7 @@ div.basket {
                 top: 40px;
                 right: 0;
                 height: 5px;
-                width: 187px;
-                background-color: yellow; // SİL BUNU
+                width: 44px;
         }
 
         div.basket-dropdown {
@@ -150,26 +199,49 @@ div.basket {
 
                 div.dropdown-container {
                         border-radius: 8px;
+                        font-size: var(--fontsize2);
+                        color: var(--gray1);
                         background-color: var(--white2);
                         padding: 25px 20px;
-                        background-color: var(--white2);
 
-                        table.product-table {
-                                tbody.product-content {
-                                        // BURALAR KOMPLE DEĞİŞEBİLİR.
-                                        tr.product {
-                                                background-color: var(--white3);
-                                                border-radius: 5px;
+                        ul.products {
+                                list-style-type: none;
+
+                                li.product {
+                                        background-color: var(--white3);
+                                        border-radius: 5px;
+                                        cursor: pointer;
+                                        margin-bottom: 3px;
+
+                                        &:hover {
+                                                box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.011);
+
+                                                div.product-title {
+                                                        color: var(--orange1);
+                                                }
+                                        }
+
+                                        div.product-title {
+                                                width: 147px;
                                                 padding: 5px 10px;
+                                        }
 
-                                                th.product-title {
-                                                        display: block;
+                                        div.product-details {
+                                                position: relative;
+                                                text-align: right;
+                                                padding: 0 10px 5px 10px;
+
+                                                span.product-count {
+                                                        position: absolute;
+                                                        bottom: 5px;
+                                                        left: 10px;
+                                                        opacity: 0.6;
+                                                        font-size: var(--fontsize3);
+                                                        margin-right: 5px;
                                                 }
-                                                th.product-count {
-                                                        display: inline;
-                                                }
-                                                th.product-price {
-                                                        display: inline;
+
+                                                span.product-price {
+                                                        font-weight: 600;
 
                                                         i.turkish-lira {
                                                                 display: inline;
@@ -178,9 +250,31 @@ div.basket {
                                         }
                                 }
                         }
+
                         div.products-total {
+                                text-align: center;
+                                background-color: var(--white3);
+                                padding: 5px 10px;
+
                                 span.total {
+                                        color: var(--green1);
+                                        font-weight: 600;
+
                                         i.turkish-lira {
+                                                display: inline;
+                                        }
+                                }
+
+                                a.basket-link {
+                                        display: block;
+                                        color: var(--gray1);
+                                        opacity: 0.7;
+                                        font-size: var(--fontsize3);
+
+                                        &:hover {
+                                                background-color: var(--white2);
+                                                color: var(--orange1);
+                                                opacity: 1;
                                         }
                                 }
                         }
@@ -220,7 +314,7 @@ div.user {
                 top: 40px;
                 right: 0;
                 height: 5px;
-                width: 187px;
+                width: 46px;
         }
 
         div.user-dropdown {
@@ -242,6 +336,12 @@ div.user {
                                 border-radius: 5px;
                                 padding: 5px 10px;
 
+                                &:hover {
+                                        color: #ff6000;
+                                        background-color: var(--white3);
+                                        box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.011);
+                                }
+
                                 &#location-link {
                                         display: none;
                                 }
@@ -255,16 +355,88 @@ div.user {
                                         color: var(--gray1);
                                         font-weight: 600;
                                 }
-
-                                &:hover {
-                                        color: #ff6000;
-                                        background-color: var(--white3);
-                                        box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.011);
-                                }
                         }
                         hr.dropdown-separator {
                                 margin: 5px 10px;
                         }
                 }
+        }
+}
+
+////////////////////////////////////////////////////////////////
+
+@media only screen and (max-width: 1400px) {
+        input.search-input {
+                width: 280px !important;
+
+                &:focus {
+                        width: 330px !important;
+                }
+        }
+}
+
+@media only screen and (max-width: 1200px) {
+        div.header-container {
+                justify-content: flex-start;
+                margin-left: 35px;
+        }
+}
+
+@media only screen and (max-width: 1000px) {
+        div.header-container {
+                margin-left: 15px;
+        }
+        div.header-right-menu {
+                right: 10px;
+        }
+        :root {
+                --fontsize1: 35px;
+        }
+}
+
+@media only screen and (max-width: 900px) {
+        div.location {
+                display: none;
+        }
+        a.dropdown-item#location-link {
+                display: block !important;
+        }
+        input.search-input {
+                &:focus {
+                        width: 300px !important;
+                }
+        }
+}
+
+@media only screen and (max-width: 650px) {
+        div.search-container {
+                position: absolute;
+                top: 90px;
+                left: 0;
+                width: 100%;
+
+                input.search-input {
+                        width: 100% !important;
+                        border-radius: 0 !important;
+                        margin-left: 0 !important;
+                }
+
+                i.search-icon {
+                        border-radius: 0 !important;
+                        margin-right: 0 !important;
+                }
+        }
+
+        div.basket {
+                display: none;
+        }
+}
+
+@media only screen and (max-width: 400px) {
+        div.header-container {
+                margin-left: 5px !important;
+        }
+        div.header-right-menu {
+                right: 0 !important;
         }
 }
