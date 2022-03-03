@@ -5,7 +5,7 @@ THIS FILE WAS DEVELOPED BY MEHMET GUDUK
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@_GENERAL_@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-const A_ELEMENTS = document.querySelectorAll("a");
+const A_ELEMENTS = document.querySelectorAll("a:not(.copyright-link)");
 A_ELEMENTS.forEach(a => {
     a.addEventListener("click", function (event) {
         event.preventDefault()

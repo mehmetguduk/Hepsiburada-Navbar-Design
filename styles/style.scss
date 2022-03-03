@@ -55,9 +55,24 @@ body {
 }
 
 main {
+    padding-top: 50px;
+    text-align: center;
     height: 100px;
     width: 100%;
     box-shadow: inset 0px 165px 26px -156px rgba(0, 0, 0, 0.15);
+
+    a.copyright-link {
+        color: var(--orange1);
+        font-weight: 600;
+
+        &:hover {
+            color: var(--black1);
+        }
+
+        &:active {
+            color: var(--orange1);
+        }
+    }
 }
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@_RESPONSIVE_@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -80,6 +95,5 @@ main {
     main {
         position: absolute;
         top: 122px;
-        z-index: -1;
     }
 }
