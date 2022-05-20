@@ -1,6 +1,7 @@
 /*
-THIS FILE WAS DEVELOPED BY MEHMET GUDUK
-© 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
+    THIS FILE WAS DEVELOPED BY MEHMET GUDUK
+    © 2022 COPYRIGHT, LICENSED WITH GPL-3.0 LICENSE, AUTHOR IS MEHMET GUDUK
+    https://github.com/mehmetguduk
 */
 
 div.control-panel{display:none;flex-direction:row;align-items:center;justify-content:center;position:fixed;bottom:0;background-color:var(--white1);width:100%}div.control-panel div.panel-item{display:flex;flex-direction:column;align-items:center;justify-content:center;margin:5px 5px;height:50px;width:80px;border-radius:5px;cursor:pointer}div.control-panel div.panel-item i.item-logo{font-size:30px;color:var(--gray1);background-color:var(--white1)}div.control-panel div.panel-item i.item-logo.fa-times{color:var(--green1);transform:rotate(180deg)}div.control-panel div.panel-item a.item-name{font-size:11px;color:var(--gray1)}div.control-panel div.panel-item:hover{box-shadow:0px 0px 7px 5px rgba(0,0,0,.055)}div.control-panel div.panel-item:hover i.item-logo{color:var(--orange1)}div.control-panel div.panel-item:hover a.item-name{font-weight:600}@media only screen and (max-width: 650px){div.control-panel{display:flex}}@media only screen and (max-width: 400px){i.item-logo{font-size:25px !important}}@media only screen and (max-width: 300px){a.item-name{display:none}div.header-container{flex-direction:column !important;align-items:flex-start !important;justify-content:center}:root{--fontsize1: 20px }}
